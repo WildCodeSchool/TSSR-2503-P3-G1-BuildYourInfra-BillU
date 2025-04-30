@@ -147,12 +147,14 @@ La collaboration avec des prestataires extérieurs, intégrés selon les besoins
 
 ## 🧗 Difficultés rencontrées
 
-### Sprint 1
+### Sprint 1
 
-
+Les objectifs de ce premier Sprint étaient d'analyser la situation de **BillU** et de proposer un plan d'action pour les 12 sprints à venir ainsi qu'un plan du réseau que nous souhaitons conceptualiser. N'ayant pas encore beaucoup d'expérience, et n'ayant encore jamais créé de plan de réseau, il n'est pas évident pour nous de nous projeter sur 13 semaines, ni de savoir exactement comment doit être construit le réseau.
 
 ## 💡 Solutions trouvées
 
-### Sprint 1
+### Sprint 1
+
+Nous avons obtenu de l'aide de la part notre DSI suite à de nombreux échanges.
 
 ## 🚀 Améliorations possibles
