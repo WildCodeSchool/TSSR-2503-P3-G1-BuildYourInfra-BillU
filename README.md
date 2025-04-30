@@ -6,9 +6,23 @@
 
 ### Présentation
 
+Ce projet est le troisième projet réalisé au sein de la Wild Code School, dans le cadre d'un bootcamp Technicien Systèmes et Réseaux.
+
+Ce projet a pour objectif de travailler sur la conception et construction d'une infrastructure réseau.
+
 ### Objectifs finaux
 
 ## 📜 Introduction
+
+**BillU** est une filiale dynamique du groupe international **RemindMe**, un acteur majeur comptant plus de 2000 collaborateurs répartis sur plusieurs continents. 
+
+Spécialisée dans le développement de logiciels innovants, notamment dans le domaine de la facturation, **BillU** bénéficie d'un important soutien financier pour accélérer sa croissance et renforcer son positionnement sur le marché.
+
+Basée à Paris, dans le 20ᵉ arrondissement, l’entreprise rassemble aujourd’hui 217 collaborateurs répartis dans 9 départements stratégiques, couvrant aussi bien la technique, le juridique, la finance que la communication.
+
+Grâce à une équipe pluridisciplinaire composée de développeurs, d'experts en finance, de juristes et de spécialistes de la qualité, BillU ambitionne de devenir une référence en matière de solutions logicielles pour la gestion des processus financiers.
+
+La collaboration avec des prestataires extérieurs, intégrés selon les besoins, vient renforcer ponctuellement les équipes pour assurer des projets de grande envergure.
 
 ## 👥 Membres du groupe par sprint
 
@@ -133,6 +147,12 @@
 
 ## 🧗 Difficultés rencontrées
 
+### Sprint 1
+
+
+
 ## 💡 Solutions trouvées
+
+### Sprint 1
 
 ## 🚀 Améliorations possibles
