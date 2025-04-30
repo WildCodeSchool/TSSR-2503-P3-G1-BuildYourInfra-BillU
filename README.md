@@ -1,4 +1,4 @@
-# 💸 BIllU
+# 💸 BillU
 
 ## 🎯 Présentation générale du projet
 
