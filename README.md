@@ -1,4 +1,4 @@
-# 💸 BIllU
+# 💸 BillU
 
 ![Logo de BillU](S01/Ressources/billU.png)
 
