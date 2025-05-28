@@ -39,19 +39,19 @@ La collaboration avec des prestataires extérieurs, intégrés selon les besoins
 
 | Membre         | Rôle          | Missions                                                                   |
 | -------------- | ------------- | -------------------------------------------------------------------------- |
-| Bertrand       | Technicien    |   |
-| Brendan        | Technicien    |   |
-| Killian        | Scrum Master  |   |
-| Tatiana        | Product Owner |   |
+| Bertrand       | Technicien    | Planification des sprints 2 & 3, Création domaine AD, Arborescence AD, GPOs |
+| Brendan        | Technicien    | Planification des sprints 2 & 3, Création domaine AD, Arborescence AD, GPOs |
+| Killian        | Scrum Master  | Planification des sprints 2 & 3, Création domaine AD, Arborescence AD, GPOs |
+| Tatiana        | Product Owner | Planification des sprints 2 & 3, Création domaine AD, Arborescence AD, GPOs |
 
 ### Sprint 3
 
 | Membre         | Rôle          | Missions                                                                   |
 | -------------- | ------------- | -------------------------------------------------------------------------- |
-| Bertrand       | Scrum Master  |   |
-| Brendan        | Product Owner |   |
-| Killian        | Technicien    |   |
-| Tatiana        | Technicienne  |   |
+| Bertrand       | Technicien    | GPOs,  |
+| Brendan        | Product Owner | GPOs,  |
+| Killian        | Technicien    | GPOs,  |
+| Tatiana        | Scrum Master  | GPOs,  |
 
 ### Sprint 4
 
