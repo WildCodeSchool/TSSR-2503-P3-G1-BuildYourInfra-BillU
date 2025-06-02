@@ -48,10 +48,10 @@ La collaboration avec des prestataires extérieurs, intégrés selon les besoins
 
 | Membre         | Rôle          | Missions                                                                   |
 | -------------- | ------------- | -------------------------------------------------------------------------- |
-| Bertrand       | Technicien    | GPOs,  |
-| Brendan        | Product Owner | GPOs,  |
-| Killian        | Technicien    | GPOs,  |
-| Tatiana        | Scrum Master  | GPOs,  |
+| Bertrand       | Technicien    | GPOs, ajout des utilisateurs, serveur debian                               |
+| Brendan        | Product Owner | GPOs, ajout des utilisateurs, serveur debian                               |
+| Killian        | Technicien    | GPOs, ajout des utilisateurs, serveur debian                               |
+| Tatiana        | Scrum Master  | GPOs, ajout des utilisateurs, serveur debian                               |
 
 ### Sprint 4
 
