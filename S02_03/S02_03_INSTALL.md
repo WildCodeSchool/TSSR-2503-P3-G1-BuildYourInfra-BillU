@@ -105,7 +105,7 @@ En DNS secondaire nous avons indiqué la boucle locale du Windows Server Core
 
 L'ajout a été fait via le controleur de domaine installé sur l'autre serveur windows
 
-![Ajout au domaine](Ressources/Ajout_Ajout_windows_core_au_domaine)
+![Ajout au domaine](Ressources/Ajout_windows_core_au_domaine.png)
 
 
 
