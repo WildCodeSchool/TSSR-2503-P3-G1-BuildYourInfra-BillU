@@ -3,6 +3,7 @@
 ## Sommaire
 
 ### 1. [Paramétrage des IP](#Paramétrage-des-IP)
+### 3. [Installation des rôles sur Windows Server 2022 GUI](#roles_windows_gui)
 ### 4. [Configuration Serveur Debian](#config-debian)
 
 ### 1. Paramétrage des IP  
@@ -17,7 +18,8 @@ Nous allons configurer les machines pour atteindre cette configuration finale :
 | 565 (G1-WINCLI01) | Windows 10 | 172.16.20.10/24| 172.16.10.1 |
 | 564 (G1-WINCLI02) | Windows 10 | 172.16.20.10/24| 172.16.10.1 |
 
-### Installation des rôles sur Windows Server 2022 GUI
+### 3. Installation des rôles sur Windows Server 2022 GUI
+<span id="roles_windows_gui"></span>
 Pour ajouter des roles sur un serveur Windows, il suffit d'aller sur le Server Manager, puis d'aller dans l'onglet **Manage** en haut, et de choisir **Add Roles and Features**.  
 Pour le type d'installation, on choisit bien **Role-based or feature-based installation**, **Next**  
 On sélectionne le serveur GUI, **Next**  
