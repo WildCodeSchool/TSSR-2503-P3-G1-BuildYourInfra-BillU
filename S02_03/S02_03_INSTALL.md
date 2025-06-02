@@ -17,7 +17,19 @@ Nous allons configurer les machines pour atteindre cette configuration finale :
 | 565 (G1-WINCLI01) | Windows 10 | 172.16.20.10/24| 172.16.10.1 |
 | 564 (G1-WINCLI02) | Windows 10 | 172.16.20.10/24| 172.16.10.1 |
 
-### 2. Configuration AD-DS sur Windows Server 2022 GUI
+### Installation des rôles sur Windows Server 2022 GUI
+Pour ajouter des roles sur un serveur Windows, il suffit d'aller sur le Server Manager, puis d'aller dans l'onglet **Manage** en haut, et de choisir **Add Roles and Features**.  
+Pour le type d'installation, on choisit bien **Role-based or feature-based installation**, **Next**  
+On sélectionne le serveur GUI, **Next**  
+On séléctionne les rôles voulus : ADDS, DHCP, DNS, **Next** 
+
+
+![Installation_rôles](Ressources/AD-DS/ADDS-screen-ADDS,DNS,DHCP.png)
+
+Puis on confirme et procède à l'installation.
+
+En haut, on clique sur le drapeau puis sur **Promote this server to a domain controller**
+
 
 ### 4. Configuration Serveur Debian
 <span id="config-debian"></span>
