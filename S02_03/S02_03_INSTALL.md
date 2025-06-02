@@ -3,6 +3,11 @@
 ## Sommaire
 
 ### 1. [Paramétrage des IP](#Paramétrage-des-IP)
+### 2. [Installation des rôles sur Windows Server 2022 GUI](#roles_windows_gui)
+#### 2.1 [Installation des rôles sur Windows Server 2022 GUI](#install_roles_windows_gui)
+#### 2.2 [Configuration du rôle AD DS sur Windows Server 2022 GUI](#config_adds_windows_gui)
+#### 2.3 [Configuration du rôle DHCP sur Windows Server 2022 GUI](#config_dhcp_windows_gui)
+#### 2.4 [Configuration du rôle DHS sur Windows Server 2022 GUI](#config_dns_windows_gui)
 ### 3. [Installation des rôles sur Windows Server 2022 GUI](#roles_windows_gui)
 ### 4. [Configuration Serveur Debian](#config-debian)
 
@@ -18,19 +23,61 @@ Nous allons configurer les machines pour atteindre cette configuration finale :
 | 565 (G1-WINCLI01) | Windows 10 | 172.16.20.10/24| 172.16.10.1 |
 | 564 (G1-WINCLI02) | Windows 10 | 172.16.20.10/24| 172.16.10.1 |
 
-### 2. Installation des rôles sur Windows Server 2022 GUI
+### 2. Installation et configuration des rôles sur Windows Server 2022 GUI
 <span id="roles_windows_gui"></span>
+
+#### 2.1 Installation des rôles sur Windows Server 2022 GUI
+<span id="install_roles_windows_gui"></span>
+
 Pour ajouter des roles sur un serveur Windows, il suffit d'aller sur le Server Manager, puis d'aller dans l'onglet **Manage** en haut, et de choisir **Add Roles and Features**.  
 Pour le type d'installation, on choisit bien **Role-based or feature-based installation**, **Next**  
-On sélectionne le serveur GUI, **Next**  
-On séléctionne les rôles voulus : ADDS, DHCP, DNS, **Next** 
-
+Nous sélectionnons le serveur GUI, **Next**  
+Nous séléctionnons les rôles voulus : ADDS, DHCP, DNS, **Next** 
 
 ![Installation_rôles](Ressources/AD-DS/ADDS-screen-ADDS,DNS,DHCP.png)
 
 Puis on confirme et procède à l'installation.
 
-En haut, on clique sur le drapeau puis sur **Promote this server to a domain controller**
+#### 2.2 Configuration du rôle AD DS sur Windows Server 2022 GUI
+<span id="config_adds_windows_gui"></span>
+En haut, nous cliquons sur le drapeau puis sur **Promote this server to a domain controller**
+
+#### 2.3 Configuration du rôle DHCP sur Windows Server 2022 GUI
+<span id="config_dhcp_windows_gui"></span>
+
+Nous cliquons également pour configurer le DHCP. Ici, rien de spécial à faire, on clique sur **Suivant** et **Commit**.   
+Dans la console DHCP, on va bien sur le server, puis on fait un click droit sur IPv4 et **New Scope**
+
+
+![New_scope_DHCP](Ressources/DHCP-NewScope.png)  
+Nous entrons un nom d'étendue, **Next**, puis les limites en adresses IP de cette étendue. Il est préférable de laisser des adresses IP pour les dédier aux serveurs en statique. On n'oublie pas de vérifier le masque. **Next**  
+Dans notre cas, nous ne configurons, au moins pour le moment, des exclusions. **Next**
+Pour la durée du bail, nous pouvons laisser les 8 joours préconfigurés. **Next**, **Next**  
+Nous avons entré ensuite une adresse de passerelle, par exemple : 172.16.10.254, puis nous avons cliqué sur **Add**, et **Next**
+Nous entrons ensuite le nom du domaine, **Next**, **Next**, **Finish**
+
+
+#### 2.4 Configuration du rôle DHS sur Windows Server 2022 GUI
+<span id="config_dns_windows_gui"></span>
+
+Pour le paramétrage du DNS, dans la console dédiée, nous faisons un click droit sur **Forward Lookup ZOnes**, puis **New Zone**.  
+
+
+![New_scope_DHCP](Ressources/DNS-NewForwardLookupZone.png)  
+**Next**, Nous choisissons bien une zone primaire, **Next**  
+On sélectionne **To all DNS servers running on domain controllers in this domain**  
+Nous choisissons un nom pour la zone, **Next**  
+On coche bien **Allow only secure dynamic updates**, **Next**  
+**Finish**  
+
+![New_scope_DHCP](Ressources/DNS-NewReverseLookupZone.png)  
+**Next**, Nous choisissons bien une zone primaire, **Next**  
+On sélectionne **To all DNS servers running on domain controllers in this domain**  
+Nous choisissons de faire une zone IPv4  , **Next**
+On entre les 3 octets de l'adresse de réseau, ici : 172.16.10
+On coche bien **Allow only secure dynamic updates**, **Next**  
+**Finish**  
+
 
 
 ### 3. Configuration Windows Serveur Core
