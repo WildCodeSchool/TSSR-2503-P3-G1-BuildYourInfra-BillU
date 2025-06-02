@@ -151,10 +151,26 @@ La collaboration avec des prestataires extérieurs, intégrés selon les besoins
 
 Les objectifs de ce premier Sprint étaient d'analyser la situation de **BillU** et de proposer un plan d'action pour les 12 sprints à venir ainsi qu'un plan du réseau que nous souhaitons conceptualiser. N'ayant pas encore beaucoup d'expérience, et n'ayant encore jamais créé de plan de réseau, il n'est pas évident pour nous de nous projeter sur 13 semaines, ni de savoir exactement comment doit être construit le réseau.
 
+### Sprint 2
+
+Pendant le début du sprint 2, le serveur Proxmox sur lequel nous devions travailler était down. Nous ne pouvions pas avancer sur le projet pendant ce temps.
+
+### Sprint 3
+
+Lors de l'implémentation d'une GPO, le serveur AD GUI est devenu totalement inutilisable. Faire un retour en arrière n'était pas possible non plus car la réplication via l'AD Core réintroduisait la même erreur.
+
 ## 💡 Solutions trouvées
 
 ### Sprint 1
 
 Nous avons obtenu de l'aide de la part notre DSI suite à de nombreux échanges.
+
+### Sprint 2
+
+Nous avons décalé le planning (reporté le sprint 2 à la semaine suivante) et combiné les sprints 2 & 3 sur 1 semaine et demie.
+
+### Sprint 3
+
+Nous avons supprimé le serveur AD Core le temps de faire le rollback du serveur AD GUI puis nous avons réimplémenté un nouveau serveur AD Core.
 
 ## 🚀 Améliorations possibles
