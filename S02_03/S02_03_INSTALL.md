@@ -17,3 +17,8 @@ Nous allons configurer les machines pour atteindre cette configuration finale :
 | 564 (G1-WINCLI02) | Windows 10 | 172.16.20.10/24| 172.16.10.1 |
 
 #### Configuration AD-DS sur Windows Server 2022 GUI
+
+
+```bash
+ls -a | grep "nanani"
+```
