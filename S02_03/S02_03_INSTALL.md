@@ -3,7 +3,7 @@
 ## Sommaire
 
 ### 1. [Paramétrage des IP](#Paramétrage-des-IP)
-### 3. [Configuration Serveur Debian(#config-debian)
+### 3. [Configuration Serveur Debian](#config-debian)
 
 ### 1. Paramétrage des IP  
 <span id="Paramétrage-des-IP"></span>
