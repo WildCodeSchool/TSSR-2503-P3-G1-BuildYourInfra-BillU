@@ -24,6 +24,27 @@ Nous allons configurer les machines pour atteindre cette configuration finale :
 
 Pour la machine serveur Debian, nous avons fait un clone de la machine template Debian sur Proxmox.
 
+#### Réseau
+
+La configuration de l'ip a été faite en ajoutant le texte suivant au fichier ``/etc/network/interfaces`` :
+
+```bash
+auto ens18
+iface ens18 inet static
+    address 172.16.10.3/24
+    gateway 172.16.10.254
+```
+
+La configuration du DNS pour cette machine a été effectuée en ajoutant le texte suivant au fichier ``/etc/resolv.conf`` :
+
+```bash
+nameserver 172.16.10.1
+nameserver 8.8.8.8
+nameserver 8.8.4.4
+```
+
+#### Intégration à l'AD
+
 Afin d'intégrer cette machine à l'AD, nous avons installé les packets ``realmd``, ``sssd`` et ``packagekit``.
 
 L'installation s'est faite avec cette commande :
