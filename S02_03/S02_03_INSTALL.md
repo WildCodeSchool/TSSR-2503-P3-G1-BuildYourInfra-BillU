@@ -17,3 +17,21 @@ Nous allons configurer les machines pour atteindre cette configuration finale :
 | 564 (G1-WINCLI02) | Windows 10 | 172.16.20.10/24| 172.16.10.1 |
 
 #### Configuration AD-DS sur Windows Server 2022 GUI
+
+### Configuration Serveur Debian
+
+Pour la machine serveur Debian, nous avons fait un clone de la machine template Debian sur Proxmox.
+
+Afin d'intégrer cette machine à l'AD, nous avons installé les packets ``realmd``, ``sssd`` et ``packagekit``.
+
+L'installation s'est faite avec cette commande :
+
+```bash
+apt-get install realmd sssd packagekit
+```
+
+Puis, pour rejoindre l'AD, nous avons utilisé la commande ``realm`` suivante :
+
+```bash
+realm join billu.lan
+```
