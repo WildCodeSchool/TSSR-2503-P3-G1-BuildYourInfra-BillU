@@ -35,7 +35,3 @@ Puis, pour rejoindre l'AD, nous avons utilisé la commande ``realm`` suivante :
 ```bash
 realm join billu.lan
 ```
-
-```bash
-ls -a | grep "nanani"
-```
