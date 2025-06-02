@@ -3,7 +3,7 @@
 ## Sommaire
 
 ### 1. [Paramétrage des IP](#Paramétrage-des-IP)
-### 3. [Configuration Serveur Debian](#config-debian)
+### 4. [Configuration Serveur Debian](#config-debian)
 
 ### 1. Paramétrage des IP  
 <span id="Paramétrage-des-IP"></span>
@@ -19,7 +19,7 @@ Nous allons configurer les machines pour atteindre cette configuration finale :
 
 ### 2. Configuration AD-DS sur Windows Server 2022 GUI
 
-### 3. Configuration Serveur Debian
+### 4. Configuration Serveur Debian
 <span id="config-debian"></span>
 
 Pour la machine serveur Debian, nous avons fait un clone de la machine template Debian sur Proxmox.
