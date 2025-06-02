@@ -18,6 +18,8 @@ Nom de compte : Administrator
 
 Mot de passe  : Azerty1*
 
+Ce serveur est actuellement utilisé essentiellement pour la réplication de l'AD. 
+
 ## Utilisation Debian Serveur
 
 Vous pouvez vous connecter au serveur Debian avec l'utilisateur suivant :
