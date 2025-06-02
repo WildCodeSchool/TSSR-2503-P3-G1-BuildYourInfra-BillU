@@ -2,9 +2,10 @@
 
 ## Sommaire
 
-### 1. [Paramétrage des IP](#Paramétrage-des-IP)  
+### 1. [Paramétrage des IP](#Paramétrage-des-IP)
+### 3. [Configuration Serveur Debian(#config-debian)
 
-### 1 Paramétrage des IP  
+### 1. Paramétrage des IP  
 <span id="Paramétrage-des-IP"></span>
 Nous allons configurer les machines pour atteindre cette configuration finale : 
 
@@ -16,9 +17,10 @@ Nous allons configurer les machines pour atteindre cette configuration finale :
 | 565 (G1-WINCLI01) | Windows 10 | 172.16.20.10/24| 172.16.10.1 |
 | 564 (G1-WINCLI02) | Windows 10 | 172.16.20.10/24| 172.16.10.1 |
 
-#### Configuration AD-DS sur Windows Server 2022 GUI
+### 2. Configuration AD-DS sur Windows Server 2022 GUI
 
-### Configuration Serveur Debian
+### 3. Configuration Serveur Debian
+<span id="config-debian"></span>
 
 Pour la machine serveur Debian, nous avons fait un clone de la machine template Debian sur Proxmox.
 
@@ -34,4 +36,10 @@ Puis, pour rejoindre l'AD, nous avons utilisé la commande ``realm`` suivante :
 
 ```bash
 realm join billu.lan
+```
+
+Pour limiter les accès en ssh au groupe DSI, nous avons modifié le fichier ``/etc/ssh/sshd_config`` en y ajoutant la ligne suivante :
+
+```bash
+AllowGroups dsi@billu.lan
 ```
