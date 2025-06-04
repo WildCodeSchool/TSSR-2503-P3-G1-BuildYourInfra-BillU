@@ -23,4 +23,22 @@ Une fois installé, nous configurons les interfaces réseau comme suit :
 
 Une fois ces configurations effectuées, il est possible de se connecter à l'interface de configuration du pare-feu pfSense depuis les machines clients (ou serveurs) graphiques présentes sur le réseau. Pour cela, il faut se connecter à l'adresse *172.16.10.254* depuis son navigateur.
 
+On peut se connecter en temps qu'admin avec le compte suivant :
+* **identifiant** : admin
+* **mot de passe** : Azerty1*
+
+Pour configurer les règles du pare-feu, il faut cliquer sur le menu Firewall, puis Rules.
+
+*insert screen*
+
+On peut ensuite ajouter des règles à l'aide du bouton **Add**. L'ajout de ces règles se fait ensuite à l'aide de cette interface :
+
+![Règle http](Ressources/pfsense-regle-http.png)
+
+Il est également possible d'ajouter des séparateurs afin de classer les règles plus facilement.
+
+Voici un exemple de plusieurs règles telles que nous les avons créées :
+
+![Liste règles](Ressources/pfsense-modele.png)
+
 ## 📂 Installation dossiers partagés
