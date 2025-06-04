@@ -27,9 +27,9 @@ On peut se connecter en temps qu'admin avec le compte suivant :
 * **identifiant** : admin
 * **mot de passe** : Azerty1*
 
-Pour configurer les règles du pare-feu, il faut cliquer sur le menu Firewall, puis Rules.
+Pour configurer les règles du pare-feu, il faut cliquer sur le menu Firewall, puis Rules : 
 
-*insert screen*
+![Règle localisation](Ressources/pfsense-regle-localisation.png)
 
 On peut ensuite ajouter des règles à l'aide du bouton **Add**. L'ajout de ces règles se fait ensuite à l'aide de cette interface :
 
@@ -39,6 +39,6 @@ Il est également possible d'ajouter des séparateurs afin de classer les règle
 
 Voici un exemple de plusieurs règles telles que nous les avons créées :
 
-![Liste règles](Ressources/pfsense-modele.png)
+![Liste règles](Ressources/pfsense-regle-modele.png)
 
 ## 📂 Installation dossiers partagés
