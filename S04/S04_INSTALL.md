@@ -2,6 +2,8 @@
 
 ## 🧱 Installation machine pfSense
 
+Cette partie du guide d'installation explique comment nous avons installé et configuré notre pare-feu pfSense.
+
 Nous créons d'abord une machine pfSense sur Proxmox. Nous utilisons pour cela l'ISO déjà présent sur l'infrastructure.
 
 Nous ajoutons trois interfaces réseau à la machine créée :
@@ -19,6 +21,6 @@ Une fois installé, nous configurons les interfaces réseau comme suit :
 | LAN                    | vmbr100               | vtnet1                | 172.16.10.0/24 | 172.16.10.254/24 | -                         | Accès console web    | 172.16.10.1                                                     |
 | DMZ                    | vmbr110               | vtnet2                | 172.20.10.0/24 | 172.20.10.254/24 | -                         | -                    | 172.20.10.1                                                     |
 
-
+Une fois ces configurations effectuées, il est possible de se connecter à l'interface de configuration du pare-feu pfSense depuis les machines clients (ou serveurs) graphiques présentes sur le réseau. Pour cela, il faut se connecter à l'adresse *172.16.10.254* depuis son navigateur.
 
 ## 📂 Installation dossiers partagés
