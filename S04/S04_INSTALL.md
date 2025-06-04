@@ -23,6 +23,10 @@ Une fois installé, nous configurons les interfaces réseau comme suit :
 
 Une fois ces configurations effectuées, il est possible de se connecter à l'interface de configuration du pare-feu pfSense depuis les machines clients (ou serveurs) graphiques présentes sur le réseau. Pour cela, il faut se connecter à l'adresse *172.16.10.254* depuis son navigateur.
 
+Ainsi, les configurations IP telles qu'elles sont dans pfSense sont comme suit :
+
+![pfSense IP](Ressources/pfsense-ip-interfaces.png)
+
 On peut se connecter en temps qu'admin avec le compte suivant :
 * **identifiant** : admin
 * **mot de passe** : Azerty1*
