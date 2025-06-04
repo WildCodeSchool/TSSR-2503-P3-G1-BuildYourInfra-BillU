@@ -1,6 +1,6 @@
 # 🖥️ Guide installation sprint 4
 
-## 🧱 Installation machine pfSense
+## 🧱 Installation et configuration initiale pfSense
 
 Cette partie du guide d'installation explique comment nous avons installé et configuré notre pare-feu pfSense.
 
