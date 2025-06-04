@@ -45,4 +45,6 @@ Voici un exemple de plusieurs règles telles que nous les avons créées :
 
 ![Liste règles](Ressources/pfsense-regle-modele.png)
 
+La totalité des règles que nous avons implémentées ont suivi le [guide de configuration officiel de pfSense](https://docs.netgate.com/pfsense/en/latest/recipes/example-basic-configuration.html).
+
 ## 📂 Installation dossiers partagés
