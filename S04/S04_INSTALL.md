@@ -1,6 +1,15 @@
 # 🖥️ Guide installation sprint 4
 
-## 🧱 Installation et configuration initiale pfSense
+## Sommaire
+
+### 1. [Installation et configuration initiale pfSense](#instal_config_pfsense)
+### 2. [Mise en place de RAID 1](#raid1)
+### 3. [Installation dossiers partagés](#instal_dossier_partagé)
+
+
+
+## 1. 🧱 Installation et configuration initiale pfSense
+<span id="instal_config_pfsense"></span>
 
 Cette partie du guide d'installation explique comment nous avons installé et configuré notre pare-feu pfSense.
 
@@ -47,4 +56,35 @@ Voici un exemple de plusieurs règles telles que nous les avons créées :
 
 La totalité des règles que nous avons implémentées ont suivi le [guide de configuration officiel de pfSense](https://docs.netgate.com/pfsense/en/latest/recipes/example-basic-configuration.html).
 
-## 📂 Installation dossiers partagés
+## 2. 📂 Mise en place de RAID 1
+<span id="raid1"></span>
+
+Cette partie du guide d'installation explique comment nous avons configuré nos disques en RAID 1.  
+
+Le RAID 1 consiste à faire un miroir de deux disques durs. Permettant la panne de l'un d'entre eux, sans provoquer de perte de données. C'est donc notre choix ici.
+
+D'abord, nous avons fait le choix d'avoir 3 disques de 32 Go.  
+
+Le premier disque sera dédié à l'OS et sera réservé pour des usages ultérieurs.  
+
+Ce sont les deux autres disques qui seront en RAID 1.
+
+Il suffit de se rendre dans la console de gestion des disques, ou **Disk Management** en anglais.  
+Click droit sur l'un des deux disques à mettre en RAID, puis **New Mirrored Volume**.  
+Une fenêtre s'ouvre, après avoir cliqué sur **Next**, nous avons la possibilité de choisir quel autre disque ajouter à ce RAID 1 en sélectionnant le disque voulu puis avec **Add**. Il est aussi possible de choisir la taille à allouer. Par exemple, nous pouvons choisir d'allouer la totalité de l'espace disponible , ou au contraire de n'allouer que quelques Go. Nous avons pris la totalité de l'espace disponible. **Next**  
+
+![Ajout_Disque](Ressources/RAID1-AjoutDisque.png)
+
+
+Il est possible de choisir une lettre associée. Nous avons choisi E pour notre volume. **Next**  
+Il est ensuite possible de choisir un format de fichier. Nous avons choisi le format NTFS. **Next**  
+Les deux disques passent en dynamique sous le nom **Dossier/Data (E:)**.  
+
+![RAID-fait](Ressources/RAID1-fait.png)
+
+
+Le RAID 1 est bien configuré.
+
+
+## 3. 📂 Installation dossiers partagés
+<span id="instal_dossier_partagé"></span>
