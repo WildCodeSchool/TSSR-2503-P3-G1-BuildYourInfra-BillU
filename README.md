@@ -145,6 +145,8 @@ La collaboration avec des prestataires extérieurs, intégrés selon les besoins
 
 ## ⚙️ Choix techniques
 
+**TODO: **
+
 ## 🧗 Difficultés rencontrées
 
 ### Sprint 1
