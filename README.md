@@ -57,10 +57,10 @@ La collaboration avec des prestataires extérieurs, intégrés selon les besoins
 
 | Membre         | Rôle          | Missions                                                                   |
 | -------------- | ------------- | -------------------------------------------------------------------------- |
-| Bertrand       | Technicien    |       |
-| Brendan        | Technicien    |       |
-| Killian        | Product Owner |       |
-| Tatiana        | Scrum Master  |       |
+| Bertrand       | Technicien    | Documentation, GLPI, dossiers partagés                                     |
+| Brendan        | Technicien    | Documentation, GLPI, pfSense                                               |
+| Killian        | Product Owner | Documentation, GLPI, pfSense                                               |
+| Tatiana        | Scrum Master  | Documentation, GLPI, dossiers partagés                                     |
 
 ### Sprint 5
 
@@ -159,6 +159,11 @@ Pendant le début du sprint 2, le serveur Proxmox sur lequel nous devions travai
 
 Lors de l'implémentation d'une GPO, le serveur AD GUI est devenu totalement inutilisable. Faire un retour en arrière n'était pas possible non plus car la réplication via l'AD Core réintroduisait la même erreur.
 
+### Sprint 4
+
+Nous avons eu de problèmes de réplication. Le serveur GUI ne semblait plus être le "RID Master" de notre AD. 
+Le sprint était également un peu court.
+
 ## 💡 Solutions trouvées
 
 ### Sprint 1
@@ -172,5 +177,9 @@ Nous avons décalé le planning (reporté le sprint 2 à la semaine suivante) et
 ### Sprint 3
 
 Nous avons supprimé le serveur AD Core le temps de faire le rollback du serveur AD GUI puis nous avons réimplémenté un nouveau serveur AD Core.
+
+### Sprint 4
+
+Nous avons suivi un [tutoriel](https://support.microsoft.com/en-us/topic/error-message-windows-cannot-create-the-object-because-the-directory-service-was-unable-to-allocate-a-relative-identifier-5632c8d6-0cce-60f4-630a-9fe28f72b3ad) pour rétablir notre "RID Master". 
 
 ## 🚀 Améliorations possibles
