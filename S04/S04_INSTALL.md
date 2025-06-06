@@ -88,3 +88,28 @@ Le RAID 1 est bien configuré.
 
 ## 3. 📂 Installation dossiers partagés
 <span id="instal_dossier_partagé"></span>
+
+Cette partie explique les actions à effectuer pour la mise en place d'un dossier individuel accessible uniquement par l'utilisateur.
+
+Il faut choisir le volume support pour les dossiers partagés.
+
+
+
+- Dans propriétés du volume : mise en partage et paramétrage des autorisations "Utilisateurs authentifiés" uniquement en lecture et écriture.
+
+![Partage](Ressources/mise_en_partage1.png)
+
+- Dans l'onglet sécurité, paramètres avancés : désactiver l'héritage puis convertir les autorisation héritées en autorisations explicites sur cet objet .Dans autorisation supprimer les 2 lignes attribuant des droits au groupe "Utilisateur"
+
+![securite](Ressources/onglet_securite2.png)
+
+- Via Users and Computers --> mappage du lecteur par utilisateur via profile  : choix du lecteur + chemin du dossier de partage
+
+![mappage](Ressources/mappage3.png)
+
+- Les dossiers individuels apparaissent dans l'arborescence :
+
+![dossiers](Ressources/dossiers4.png)
+
+
+Le paramétrage est terminé.
