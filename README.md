@@ -57,10 +57,10 @@ La collaboration avec des prestataires extérieurs, intégrés selon les besoins
 
 | Membre         | Rôle          | Missions                                                                   |
 | -------------- | ------------- | -------------------------------------------------------------------------- |
-| Bertrand       | Technicien    | Documentation, GLPI, dossiers partagés                                     |
+| Bertrand       | Technicien    | Documentation, GLPI, dossiers partagés, bug réplication                    |
 | Brendan        | Technicien    | Documentation, GLPI, pfSense                                               |
-| Killian        | Product Owner | Documentation, GLPI, pfSense                                               |
-| Tatiana        | Scrum Master  | Documentation, GLPI, dossiers partagés                                     |
+| Killian        | Product Owner | Documentation, GLPI, pfSense, télémétrie                                   |
+| Tatiana        | Scrum Master  | Documentation, GLPI, dossiers partagés, télémétrie, bug réplication        |
 
 ### Sprint 5
 
