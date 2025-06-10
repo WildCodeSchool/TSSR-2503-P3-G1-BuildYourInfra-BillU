@@ -66,10 +66,10 @@ La collaboration avec des prestataires extérieurs, intégrés selon les besoins
 
 | Membre         | Rôle          | Missions                                                                   |
 | -------------- | ------------- | -------------------------------------------------------------------------- |
-| Bertrand       |     |       |
-| Brendan        |     |       |
-| Killian        |     |       |
-| Tatiana        |     |       |
+| Bertrand       | Product Owner |       |
+| Brendan        | Scrum Master  |       |
+| Killian        | Technicien    |       |
+| Tatiana        | Technicienne  |       |
 
 ### Sprint 6
 
