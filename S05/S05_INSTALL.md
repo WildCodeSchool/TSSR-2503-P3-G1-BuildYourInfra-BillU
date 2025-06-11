@@ -10,4 +10,4 @@ Pour installer le gestionnaire de supervision Zabbix, une nouvelle machine virtu
 
 ### Zabbix agent Linux
 
-## Mise en place de sauvegarde
+## 💾 Mise en place de sauvegarde
