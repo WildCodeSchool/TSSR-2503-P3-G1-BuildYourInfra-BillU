@@ -66,10 +66,10 @@ La collaboration avec des prestataires extérieurs, intégrés selon les besoins
 
 | Membre         | Rôle          | Missions                                                                   |
 | -------------- | ------------- | -------------------------------------------------------------------------- |
-| Bertrand       | Product Owner |       |
-| Brendan        | Scrum Master  |       |
-| Killian        | Technicien    |       |
-| Tatiana        | Technicienne  |       |
+| Bertrand       | Product Owner | Installation et configuration Zabbix                                       |
+| Brendan        | Scrum Master  | Installation et configuration Zabbix                                       |
+| Killian        | Technicien    | Installation et configuration Bareos                                       |
+| Tatiana        | Technicienne  | Installation et configuration Bareos                                       |
 
 ### Sprint 6
 
