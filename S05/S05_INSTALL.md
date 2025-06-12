@@ -8,6 +8,8 @@ Afin de suivre les différentes machines de notre infrastructure, il faut instal
 
 ### Zabbix serveur
 
+https://www.zabbix.com/download?zabbix=7.2&os_distribution=ubuntu&os_version=24.04&components=server_frontend_agent&db=mysql&ws=apache
+
 ### Zabbix agent Windows
 
 L'installation de Zabbix agent sur Windows se fait en téléchargeant l'utilitaire d'installation [ici](https://www.zabbix.com/fr/download_agents). 
