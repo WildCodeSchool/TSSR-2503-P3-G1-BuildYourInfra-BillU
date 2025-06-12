@@ -8,6 +8,8 @@ Pour installer le gestionnaire de supervision Zabbix, une nouvelle machine virtu
 
 ### Zabbix agent Windows
 
+L'installation de Zabbix agent sur Windows se fait en téléchargeant l'utilitaire d'installation [ici](https://www.zabbix.com/fr/download_agents).
+
 ### Zabbix agent Linux
 
 ## 💾 Mise en place de sauvegarde
