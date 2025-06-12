@@ -45,4 +45,6 @@ ServerActive=172.16.10.8
 systemctl restart zabbix-agent
 ```
 
+### Ajout d'un hôte à superviser dans Zabbix serveur
+
 ## 💾 Mise en place de sauvegarde
