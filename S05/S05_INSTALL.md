@@ -132,4 +132,30 @@ Il est nécessaire de spécifier un groupe pour ce nouvel hôte.
 
 Dans le champs IP, il faut inscrire l'adresse IP de la machine ciblée sur le réseau.
 
-## 💾 Mise en place de sauvegarde
+## 💾 Mise en place de sauvegarde avec Windows Server Backup
+
+Cette partie du guide d'installation explique comment nous avons configuré nos sauvegardes.
+
+Pour cela, nous avons utilisé Windows Server Backup qui est un outil directement inclus à Windows Server, gratuit et simple d'utilisation.
+
+D'abord, nous avons ajouté deux disques qui seront dédiés aux sauvegardes.  
+Ces deux disques ont été mis en RAID1. Vous pouvez retrouver le guide d'installation de disques en RAID1 dans l'INSTALL.md de S04.
+
+### Installation de Windows backup server
+
+L'installation de la fonctionnalté se fait depuis le Server Manager; en haut de la fenêtre, on clique sur **Manage**, puis **Add roles**, **Features**, Ici on va cocher **Windows Server Backup**, puis **Install**.
+
+### Configuration de Windows backup server
+
+Dans le Server Manager, on va dans **Tools**, puis **Windows Server Backup** pour lancer la console.  
+Sur la droite de la console, on clique sur **Backup Once** pour paramétrer une sauvegarde ponctuelle.  
+On clique sur **Next**, puis **Full server** pour paramétrer une première sauvegarde. On spécifie la destination de la sauvegarde, puis on lance la sauvegarde.
+**OK** au message d’erreur signalant que le lecteur Z: fait partie des éléments ciblés par la sauvegarde, et donc ne sera finalement pas pris en compte dans la sauvegarde.
+
+
+On procède également à une programmation de sauvegardes récurrente.
+Sur la droite de la console, on clique sur **Backup Schedule** pour paramétrer une sauvegarde programmée.  
+On clique sur **Next**, puis **Custom** pour paramétrer une sauvegarde sur des des éléments précis comme le C: et le D:. On choisit ensuite la fréquence, comme **Once a day** à minuit pour éviter toute modification en cours. On préfèrera ici l'option **Backup to a hard disk that is dedicated for backups**. Il ne reste plus qu'à choisir le disque voulu, comme nous ici le Z:. On arrive enfin au récapitulatif de ce que l'on s'apprête à valider et confirmer comme on le voit ci-dessous.
+![confirmation-backup](Ressources/confirmation-backup.png)
+
+Il ne reste plus qu'à valider en cliquant sur **Finish**.
