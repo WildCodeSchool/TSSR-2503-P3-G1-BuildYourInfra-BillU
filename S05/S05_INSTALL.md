@@ -22,4 +22,27 @@ msiexec.exe l*v "C:\Package.log" /i "zabbix_agent-7.2.6-windows-amd64-openssl.ms
 
 ### Zabbix agent Linux
 
+```bash
+wget https://repo.zabbix.com/zabbix/7.2/release/debian/pool/main/z/zabbix-release/zabbix-release_latest_7.2+debian12_all.deb
+dpkg -i zabbix-release_latest_7.2+debian12_all.deb
+apt update 
+```
+
+```bash
+apt install zabbix-agent
+```
+
+```bash
+nano /etc/zabbix/zabbix_agentd.conf
+```
+
+```bash
+Server=172.16.10.8
+ServerActive=172.16.10.8
+```
+
+```bash
+systemctl restart zabbix-agent
+```
+
 ## 💾 Mise en place de sauvegarde
