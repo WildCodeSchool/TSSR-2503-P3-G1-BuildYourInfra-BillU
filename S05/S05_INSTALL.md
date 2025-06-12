@@ -8,8 +8,6 @@ Afin de suivre les différentes machines de notre infrastructure, il faut instal
 
 ### Zabbix serveur
 
-https://www.zabbix.com/download?zabbix=7.2&os_distribution=ubuntu&os_version=24.04&components=server_frontend_agent&db=mysql&ws=apache
-
 L'installation de Zabbix serveur sur Linux se fait en lignes de commandes.
 
 Il faut tout d'abord installer le répo Zabbix :
