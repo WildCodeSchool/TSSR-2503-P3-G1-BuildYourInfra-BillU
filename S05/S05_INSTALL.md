@@ -26,24 +26,34 @@ msiexec.exe l*v "C:\Package.log" /i "zabbix_agent-7.2.6-windows-amd64-openssl.ms
 
 ### Zabbix agent Linux
 
+Il faut tout d'abord installer le répo Zabbix :
+
 ```bash
 wget https://repo.zabbix.com/zabbix/7.2/release/debian/pool/main/z/zabbix-release/zabbix-release_latest_7.2+debian12_all.deb
 dpkg -i zabbix-release_latest_7.2+debian12_all.deb
 apt update 
 ```
 
+Puis installer Zabbix agent :
+
 ```bash
 apt install zabbix-agent
 ```
+
+Pour configurer l'agent, on édite le fichier de configuration : 
 
 ```bash
 nano /etc/zabbix/zabbix_agentd.conf
 ```
 
+En y ajoutant les lignes suivantes :
+
 ```bash
 Server=172.16.10.8
 ServerActive=172.16.10.8
 ```
+
+Enfin, on peut relancer le service :
 
 ```bash
 systemctl restart zabbix-agent
