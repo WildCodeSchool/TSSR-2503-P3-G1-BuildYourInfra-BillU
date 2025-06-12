@@ -1,6 +1,12 @@
 # 🖥️ Guide installation sprint 5
 
+## Sommaire
+
+### 1. [Installation et configuration de Zabbix](#zabbix)
+### 2. [Mise en place de sauvegarde avec Windows Server Backup](#save)
+
 ## 📊 Installation et configuration de Zabbix
+<span id="zabbix"></span>
 
 Pour installer le gestionnaire de supervision Zabbix, une nouvelle machine virtuelle a été créée. Cette machine a pour OS Ubuntu. Elle est présente sur le réseau LAN de l'entreprise à l'adresse 172.16.10.8.
 
@@ -133,6 +139,7 @@ Il est nécessaire de spécifier un groupe pour ce nouvel hôte.
 Dans le champs IP, il faut inscrire l'adresse IP de la machine ciblée sur le réseau.
 
 ## 💾 Mise en place de sauvegarde avec Windows Server Backup
+<span id="save"></span>
 
 Cette partie du guide d'installation explique comment nous avons configuré nos sauvegardes.
 
