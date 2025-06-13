@@ -5,6 +5,7 @@
 ### 1. [Installation et configuration de Zabbix](#zabbix)
 ### 2. [Mise en place de sauvegarde avec Windows Server Backup](#save)
 ### 3. [Installation d'un serveur web Apache dans un conteneur Ubuntu placé en DMZ](#install_apache)
+### 4. [Mise en place de restriction d'accès](#restriction_accès)
 
 ## 📊 Installation et configuration de Zabbix
 <span id="zabbix"></span>
@@ -278,4 +279,68 @@ et vérifier :
 L'installation est terminée.
 
 ![page_web](Ressources/Pageweb_billu.png)
+
+
+
+### 4. Mise en place de restriction d'accès
+<span id="restriction_accès"></span>
+
+
+#### Paramétrage des logon hours
+D’abord, il faut paramétrer les logon hours pour les utilisateurs:  
+Dans la console **Active Directory Users and Computers**, on sélectionne tous les utilisateurs de l'UO **Employés**, Click droit **Properties**, **Account**, **Logon hours**. On sélectionne les horaires 0h-7h et 20h-24h de lundi à samedi et la totalité de dimanche pour les paramétrer en Logon Denied.
+
+#### Création d’un groupe bypass
+Dans la console **Active Directory Users and Computers**, on créée une nouvelle UO que l'on nommera **Bypass-DenyAccess** dans laquelle con y créée le groupe **Bypass-DenyAccess**.
+Ce groupe permettra de faire des exceptions. Ce groupe est sensé etre volatil.  
+Un exemple d’utilisation est : Un employé demande à avoir des accès prolongés le soir/le dimanche. Cette demande parvient à la DSI. La DSI ajoute l’utilisateur au groupe **Bypass-DenyAccess** pour la durée demandée. Une fois la durée écoulée, la DSI enlève l’utilisateur du groupe.
+
+Appartenir à un groupe à l'accès bloqué prend le pas sur appartenir à un groupe à l'accès autorisé. Ainsi cette méthode est valdie.
+
+
+#### Création et configuration de la GPO
+##### Création de la GPO
+Dans la console **Group Policy Management**, on créée une nouvelle GPO.
+
+Pour la paramétrer, on fait click droit **Edit**.  
+On suit l’arborescence suivant :  
+**Computer Configuration, Policies, Windows Settings, Security Settings, Local Policies, Security options**, et il suffit d'activer : **Microsoft network server: Disconnect clients when logon hours expire**.
+
+
+##### Liaison de la GPO
+On va lier cette GPO à l’UO employés. Ce qui permettra de ne pas appliquer cette GPO à la DSI, mais de l'appliquer aux employés.  
+
+Nous allons voir comment mieux gérer les exceptions.
+
+##### Mise en place du bypass
+
+Dans la section Délégation de la GPO, on clique sur **Advanced** puis sur Add pour ajouter les groupes Direction et Bypass-DenyAccess. On va sélectionner l’un de ces groupes, puis, en dessous de Permissions, cocher Deny pour Apply group policy. Ce qui permettra donc de ne pas appliquer cette GPO aux groupes de bypass. Il n’est pas utile de mettre le groupe de la DSI car la GPO n’y est pas liée.
+
+![accès-bypass](Ressources/access-bypass.png)
+
+
+#### Création d’un script pour affiner de 7h à 7h30
+La méthode utilisée avec les logon hours ne permet pas d'affiner plus précisemment les heures de connexions. Une autre méthode est nécessaire pour n'autoriser l'accès que de 7h30 à 20h.
+
+Voici un extrait du script fait : 
+``` powershell
+$HeureActuelle = (Get-Date).Hour
+$MinuteActuelle = (Get-Date).Minute
+
+if ($HeureActuelle -eq 7 -and $MinuteActuelle -ge 0 -and $MinuteActuelle -lt 30) {
+Write-Host "La connexion est interdite avant 7h30. Votre session va être déconnectée dans 15 secondes. Veuillez enregistrer votre travail immédiatement. Retournez dormir un peu"
+shutdown.exe /l /f /t 15
+}
+```
+
+Le script a été enregistré sur un dossier partagé accessible par tous.
+Puis lié à la GPO.
+
+
+
+
+
+
+
+
 
