@@ -66,10 +66,10 @@ La collaboration avec des prestataires extérieurs, intégrés selon les besoins
 
 | Membre         | Rôle          | Missions                                                                   |
 | -------------- | ------------- | -------------------------------------------------------------------------- |
-| Bertrand       | Product Owner | Installation et configuration Zabbix                                       |
-| Brendan        | Scrum Master  | Installation et configuration Zabbix                                       |
-| Killian        | Technicien    | Installation et configuration Bareos                                       |
-| Tatiana        | Technicienne  | Installation et configuration Bareos                                       |
+| Bertrand       | Product Owner | Installation et configuration Zabbix, serveur web Apache                   |
+| Brendan        | Scrum Master  | Installation et configuration Zabbix, code site web                        |
+| Killian        | Technicien    | Gestion des sauvegardes, restrictions d'accès                              |
+| Tatiana        | Technicienne  | Gestion des sauvegardes                                                    |
 
 ### Sprint 6
 
@@ -166,6 +166,10 @@ Lors de l'implémentation d'une GPO, le serveur AD GUI est devenu totalement inu
 Nous avons eu de problèmes de réplication. Le serveur GUI ne semblait plus être le "RID Master" de notre AD. 
 Le sprint était également un peu court.
 
+### Sprint 5
+
+Nous avons d'abord voulu faire nos sauvegardes à l'aide de Bareos, ce qui a été complexe et nous a ralentis. L'installation de Zabbix a été relativement complexe, surtout à cause de la configuration de la base de données en MySQL.
+
 ## 💡 Solutions trouvées
 
 ### Sprint 1
@@ -183,5 +187,9 @@ Nous avons supprimé le serveur AD Core le temps de faire le rollback du serveur
 ### Sprint 4
 
 Nous avons suivi un [tutoriel](https://support.microsoft.com/en-us/topic/error-message-windows-cannot-create-the-object-because-the-directory-service-was-unable-to-allocate-a-relative-identifier-5632c8d6-0cce-60f4-630a-9fe28f72b3ad) pour rétablir notre "RID Master". 
+
+### Sprint 5
+
+Nous avons finalement décidé de mettre en place nos sauvegardes à l'aide de Wiondows Server Backup.
 
 ## 🚀 Améliorations possibles
