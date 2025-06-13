@@ -169,7 +169,7 @@ On clique sur **Next**, puis **Custom** pour paramétrer une sauvegarde sur des 
 Il ne reste plus qu'à valider en cliquant sur **Finish**.
 
 
-### Installation d'un serveur web Apache dans un conteneur Ubuntu placé en DMZ
+## Installation d'un serveur web Apache dans un conteneur Ubuntu placé en DMZ
 <span id=install_apache></span>
 
 #### 1 -  Configurer le conteneur dans Proxmox pour etre dans la DMZ
