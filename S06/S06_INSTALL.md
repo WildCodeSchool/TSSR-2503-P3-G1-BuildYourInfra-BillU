@@ -6,6 +6,11 @@ L'installation de FreePBX se fait à partir de l'ISO disponible sur le serveur P
 
 Nous utilisons pour cela l'iso _SNG7-PBX16-64bit-2302-1.iso_. 
 
+### Configuration comptes
+
+Compte admin FreePBX :
+ - Admin / Azerty1*
+
 ### Lignes
 
 | CLIENT | NUM | NOM | MDP |
