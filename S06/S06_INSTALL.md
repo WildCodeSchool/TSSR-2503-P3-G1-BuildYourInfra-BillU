@@ -8,6 +8,7 @@ Nous utilisons pour cela l'iso _SNG7-PBX16-64bit-2302-1.iso_.
 
 ### Lignes
 
+| CLIENT | NUM | NOM | MDP |
 | ----- | ----- | ---------- | -------- |
 | CLI01 | 80100 | Yara Abadi | 1234 
 | CLI02 | 80101 | Remi Advezekt | 1234
