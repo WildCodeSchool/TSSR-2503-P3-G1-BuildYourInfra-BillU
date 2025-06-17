@@ -17,3 +17,10 @@ Compte admin FreePBX :
 | ----- | ----- | ---------- | -------- |
 | CLI01 | 80100 | Yara Abadi | 1234 
 | CLI02 | 80101 | Remi Advezekt | 1234
+
+### Installation de 3CX Phone
+
+https://3cxphone.software.informer.com/6.0/
+
+Set accounts -> Ajout des comptes sur le serveur FreePBX
+Check appel : nickel
