@@ -1,6 +1,6 @@
 # 🖥️ Guide d'installation sprint 6
 
-## 📞 Installation de FreePBX
+## 📞 Installation de FreePBX et 3CX
 
 L'installation de FreePBX se fait à partir de l'ISO disponible sur le serveur Proxmox.
 
