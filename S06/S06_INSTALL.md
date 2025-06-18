@@ -149,7 +149,7 @@ Cette étape doit être répétée sur l'autre téléphone, sur un autre client,
 ## 3. 📧 Installation d'un serveur iRedMail en DMZ
 <span id="iRedmail"></span>
 
-Préquis : Un domaine configuré dans Active Directory, une DMZ
+Préquis : Un domaine configuré dans Active Directory, une DMZ, Thunderbird installé sur les clients.
 
 
 ### 1. Installation en DMZ
@@ -187,7 +187,7 @@ Préquis : Un domaine configuré dans Active Directory, une DMZ
 
 ### 3. Installation du serveur mail sur le serveur Debian
 
-- Vérifier la dernière version disponible (https://www.iredmail.org/download.html) puis installer :
+- Vérifier la dernière version disponible sur ce [lien](https://www.iredmail.org/download.html) puis installer :
 
             wget https://github.com/iredmail/iRedMail/archive/refs/tags/1.7.4.tar.gz
 
@@ -221,11 +221,33 @@ Suivre le menu d"installation
 
 ### Accès aux interfaces web
 
-- Accès à l'interface de gestion web : https://ip_debian/iredadmin
+- Accès à l'interface de gestion web : https://ip_debian/iredadmin  
+Avec pour identifiant postmaster@billu.lan  
+Et mot de passe : Azerty1*
 
-- Pour accéder à l'interface web :  http://ip_debian/mail
+Ici, il est possible d'ajouter des utilisateurs. 
 
 
-L'installation du serveur est terminée.
+![creation_user](Ressources/mail-creationuser.png)
+
+
+On choisit le nom de domaine auquel intégrer l'utilisateur : billu.lan  
+On entre une adresse email, ici, abadi.yara@billu.lan  
+On entre un mot de passe, ici Azerty1*  
+Ainsi qu'un nom d'affichage : Abadi Yara  
+Pour finalement cliquer sur **Add** pour valider la création de l'utilisateur.
+
+- Pour accéder à l'interface web :  http://ip_debian/mail  
+
+
+### Accès au client de messagerie : Thunderbird
+
+Execution de Thunderbird.  
+Faire une configuration manuelle pour entrer l'adresse IP du serveur et les ports utilisés  
+On renseigne les différents champs comme montrés ci-suit :  
+
+![config-thunderbird](Ressources/config-thunderbird.png)
+
+La connexion est établie.
 
 
