@@ -76,8 +76,8 @@ La collaboration avec des prestataires extérieurs, intégrés selon les besoins
 | Membre         | Rôle          | Missions                                                                   |
 | -------------- | ------------- | -------------------------------------------------------------------------- |
 | Bertrand       | Technicien    |   |
-| Brendan        | Product Owner |   |
-| Killian        | Scrum Master  |   |
+| Brendan        | Product Owner | Installation et configuration FreePBX,  |
+| Killian        | Scrum Master  | Installation et configuration FreePBX,  |
 | Tatiana        | Technicienne  |   |
 
 ### Sprint 7
