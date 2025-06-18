@@ -75,10 +75,10 @@ La collaboration avec des prestataires extérieurs, intégrés selon les besoins
 
 | Membre         | Rôle          | Missions                                                                   |
 | -------------- | ------------- | -------------------------------------------------------------------------- |
-| Bertrand       | Technicien    |   |
-| Brendan        | Product Owner | Installation et configuration FreePBX,  |
-| Killian        | Scrum Master  | Installation et configuration FreePBX,  |
-| Tatiana        | Technicienne  |   |
+| Bertrand       | Technicien    | Installation et configuration iRedMail, documentation                      |
+| Brendan        | Product Owner | Installation et configuration FreePBX, documentation                       |
+| Killian        | Scrum Master  | Installation et configuration FreePBX                                      |
+| Tatiana        | Technicienne  | Installation et configuration iRedMail                                     |
 
 ### Sprint 7
 
