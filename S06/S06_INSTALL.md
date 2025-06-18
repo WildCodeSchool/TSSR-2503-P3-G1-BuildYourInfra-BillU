@@ -8,7 +8,7 @@
 
 
 
-## 📞 Installation de FreePBX et 3CX
+## 📞 Installation de FreePBX
 
 L'installation de FreePBX se fait à partir de l'ISO disponible sur le serveur Proxmox.
 
@@ -112,7 +112,7 @@ Les informations à remplir sont :
 
 Les autres champs peuvent être laissés vierges. Une fois que l'on a rempli les informations, on peut valider avec le bouton _Submit_.
 
-### 2. Installation de 3CX Phone
+## 2. 📞 Installation de 3CX Phone
 <span id="3CX"></span>
 
 Pour tester les lignes téléphoniques nouvellement créées, nous installons 3CX Phone sur les clients.
