@@ -1,12 +1,21 @@
 # 🖥️ Guide d'installation sprint 6
 
+## Sommaire
+
+### 1. [Installation de FreePBX](#Freepbx)
+### 2. [Installation de 3CX Phone](#3CX)
+### 3. [Installation d'un serveur iRedMail en DMZ](#iRedmail)
+
+
+
 ## 📞 Installation de FreePBX et 3CX
 
 L'installation de FreePBX se fait à partir de l'ISO disponible sur le serveur Proxmox.
 
 Nous utilisons pour cela l'iso _SNG7-PBX16-64bit-2302-1.iso_. 
 
-### Installation de FreePBX
+### 1. Installation de FreePBX
+<span id="Freepbx"></span>
 
 Une fois la VM Proxmox créée, on peut la lancer pour installer FreePBX.
 
@@ -103,7 +112,8 @@ Les informations à remplir sont :
 
 Les autres champs peuvent être laissés vierges. Une fois que l'on a rempli les informations, on peut valider avec le bouton _Submit_.
 
-### Installation de 3CX Phone
+### 2. Installation de 3CX Phone
+<span id="3CX"></span>
 
 Pour tester les lignes téléphoniques nouvellement créées, nous installons 3CX Phone sur les clients.
 
@@ -136,7 +146,8 @@ Cette étape doit être répétée sur l'autre téléphone, sur un autre client,
 
 
 
-## 📧 Installation d'un serveur iRedMail en DMZ
+## 3. 📧 Installation d'un serveur iRedMail en DMZ
+<span id="iRedmail"></span>
 
 Préquis : Un domaine configuré dans Active Directory, une DMZ
 
