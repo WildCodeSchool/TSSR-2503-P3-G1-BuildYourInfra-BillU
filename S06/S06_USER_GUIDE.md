@@ -8,4 +8,6 @@ Par exemple, si Yara veut appeler Remi, elle peut composer son numéro :
 
 ![3CX Yara](Ressources/yara_calling.png)
 
+Remi reçoit alors l'appel qu'il peut accepter ou non :
+
 ![3CX Remi](Ressources/remi_receiving.png)
