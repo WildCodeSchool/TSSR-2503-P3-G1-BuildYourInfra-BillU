@@ -22,7 +22,15 @@ Enfin, on valide la seule option, _FreePBX Standard_ :
 
 ![FreePBX étape 3](Ressources/freePBX-03.png)
 
+On accède alors à l'utilitaire d'installation. Il faut configurer un mot de passe pour notre utilisateur initial root, en cliquant sur le bouton suivant :
 
+![FreePBX mot de passe](Ressources/freePBX_passwd)
+
+Dans notre cas, pour assurer la compatibilité avec la disposition de clavier US/FR, nous choisissons dans un premier temps le mot de passe _free_. 
+
+Une fois le mot de passe choisit, il n'y a plus qu'à attendre que l'installation soit terminée sur l'écran suivant :
+
+![FreePBX ok](Ressources/freePBX_ok)
 
 La langue et le formatage par défaut du clavier de FreePBX est US. Nous modifions cela à l'aide des commandes suivantes :
 
