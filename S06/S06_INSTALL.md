@@ -22,6 +22,16 @@ Enfin, on valide la seule option, _FreePBX Standard_ :
 
 ![FreePBX étape 3](Ressources/freePBX-03.png)
 
+
+
+La langue et le formatage par défaut du clavier de FreePBX est US. Nous modifions cela à l'aide des commandes suivantes :
+
+```
+localectl set-locale LANG=fr_FR.utf8
+localectl set-keymap fr
+localectl set-x11-keymap fr
+```
+
 ### Configuration de l'IP 
 
 ### Configuration comptes
