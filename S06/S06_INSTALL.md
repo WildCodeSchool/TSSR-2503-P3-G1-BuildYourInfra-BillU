@@ -44,6 +44,24 @@ localectl set-x11-keymap fr
 
 ### Configuration de l'IP 
 
+Pour configurer l'adresse IP de la machine FreePBX, il faut modifier le fichier de configuration avec la commande suivante :
+
+```
+nano /etc/sysconfig/network-scripts/ifcgf-eth0
+```
+
+En modifiant la ligne `BOOTPROTO=dhcp` par `BOOTPROTO=none` et en ajoutant les lignes :
+
+```
+NETMASK=255.255.255.0
+IPADDR=172.20.10.3
+GATEWAY=172.20.10.254
+```
+
+Puis, on relance le service de networking avec la commande :
+
+``` service network restart```
+
 ### Configuration comptes
 
 On accède à l'interface de gestion de FreePBX en se connectant depuis un client à l'adresse _172.20.10.3_
