@@ -105,7 +105,21 @@ Les autres champs peuvent être laissés vierges. Une fois que l'on a rempli les
 
 ### Installation de 3CX Phone
 
-https://3cxphone.software.informer.com/6.0/
+Pour tester les lignes téléphoniques nouvellement créées, nous installons 3CX Phone sur les clients.
+
+Le logiciel peut être téléchargé [ici](https://3cxphone.software.informer.com/6.0/).
+
+Sur l'écran du SIP phone, clique sur Set account pour avoir la fenêtre Accounts.
+En cliquant sur New, la fenêtre de création de compte Account settings apparaît :
+Pour configurer la ligne de l'utilisatrice Marie Dupont, rentre les informations comme ceci :
+
+    Account Name : Marie Dupont
+    Caller ID : 80100
+    Extension : 80100
+    ID : 80100
+    Password : 1234
+    I am in the office - local IP : l'adresse IP du serveur soit 172.16.10.5
+    
 
 Set accounts -> Ajout des comptes sur le serveur FreePBX
 Check appel : nickel
