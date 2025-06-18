@@ -74,12 +74,34 @@ Depuis le site, on peut configurer le compte admin FreePBX. Dans notre cas, le c
 
 ### Lignes
 
-Nous ne déployons pour l'instant que deux lignes, afin de tester la fonctionnalité 
+Nous ne déployons pour l'instant que deux lignes, afin de tester la fonctionnalité implémentée.
+
+Les numéros de téléphone, noms et mot de passe associés à nos lignes sont les suivants :
 
 | CLIENT | NUM | NOM | MDP |
 | ----- | ----- | ---------- | -------- |
 | CLI01 | 80100 | Yara Abadi | 1234 
 | CLI02 | 80101 | Remi Advezekt | 1234
+
+L'ajout d'une nouvelle ligne se fait en choissiant l'option _Applications_ puis _Extensions_ du menu :
+
+![FreePBX ajout extensions](Ressources/freePBX_extensions.png)
+
+On choisit ensuite _Add Extension_ puis l'option _SIP_ :
+
+![FreePBX SIP](Ressources/freePBX_SIP.png)
+
+Enfin, on peut remplir les informations de notre utilisateur dans la fenêtre suivante :
+
+![FreePBX ajout de ligne](Ressources/freePBX_ajout_ligne.png)
+
+Les informations à remplir sont :
+* **User Extension** : le numéro de téléphone
+* **Display Name** : le nom
+* **Secret** : le mot de passe
+* **Password for new user** : le mot de passe
+
+Les autres champs peuvent être laissés vierges. Une fois que l'on a rempli les informations, on peut valider avec le bouton _Submit_.
 
 ### Installation de 3CX Phone
 
