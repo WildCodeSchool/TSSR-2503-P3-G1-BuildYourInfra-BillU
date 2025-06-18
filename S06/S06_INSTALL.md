@@ -66,8 +66,10 @@ Puis, on relance le service de networking avec la commande :
 
 On accède à l'interface de gestion de FreePBX en se connectant depuis un client à l'adresse _172.20.10.3_
 
-Compte admin FreePBX :
- - Admin / Azerty1*
+Depuis le site, on peut configurer le compte admin FreePBX. Dans notre cas, le compte sera le suivant :
+
+* **Nom de compte :** Admin
+* **Mot de passe :**  Azerty1* 
 
 
 ### Lignes
