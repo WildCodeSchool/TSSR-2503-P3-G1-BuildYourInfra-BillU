@@ -78,10 +78,10 @@ Nous ne déployons pour l'instant que deux lignes, afin de tester la fonctionnal
 
 Les numéros de téléphone, noms et mot de passe associés à nos lignes sont les suivants :
 
-| CLIENT | NUM | NOM | MDP |
-| ----- | ----- | ---------- | -------- |
-| CLI01 | 80100 | Yara Abadi | 1234 
-| CLI02 | 80101 | Remi Advezekt | 1234
+| Client | Numéro | Nom           | Mot de passe  |
+| ----- | -----   | ----------    | -------- |
+| CLI01 | 80100   | Yara Abadi    | 1234 
+| CLI02 | 80101   | Remi Advezekt | 1234
 
 L'ajout d'une nouvelle ligne se fait en choissiant l'option _Applications_ puis _Extensions_ du menu :
 
