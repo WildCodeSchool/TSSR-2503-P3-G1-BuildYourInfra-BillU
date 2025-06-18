@@ -6,6 +6,6 @@ Une fois le client 3CX ouvert, il est possible d'appeler une ligne existante en 
 
 Par exemple, si Yara veut appeler Remi, elle peut composer son numéro :
 
-![3CX Yara](Ressources/yara calling.png)
+![3CX Yara](Ressources/yara_calling.png)
 
-![3CX Remi](Ressources/remi receiving.png)
+![3CX Remi](Ressources/remi_receiving.png)
