@@ -8,6 +8,14 @@ Nous utilisons pour cela l'iso _SNG7-PBX16-64bit-2302-1.iso_.
 
 ### Installation de FreePBX
 
+Une fois la VM Proxmox créée, on peut la lancer pour installer FreePBX. A chaque étape de l'installation, choisit la première option, comme suit :
+
+![FreePBX étape 1](Ressources/freePBX-01.png)
+
+![FreePBX étape 2](Ressources/freePBX-02.png)
+
+![FreePBX étape 3](Ressources/freePBX-03.png)
+
 ### Configuration de l'IP 
 
 ### Configuration comptes
