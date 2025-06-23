@@ -36,5 +36,45 @@ L'ajout a été fait via le controleur de domaine sur Windows Server Core.
 
 ### Transfert des rôles avec NTDSUTIL
 
+```powershell
+ntdsutil.exe
+```
+
+```powershell
+role
+```
+
+```powershell
+connections
+```
+
+```powershell
+connect to server WINSRVCORE01
+```
+
+```powershell
+connect to server WINSRVCORE02
+```
+
+```powershell
+q
+```
+
+```powershell
+transfer RID master
+```
+
+```powershell
+transfer schema master
+```
+
+```powershell
+transfer domain naming master
+```
+
+```powershell
+transfer pdc
+```
+
 ## 🖥️ PC d'administration
 <span id="admin"></span>
