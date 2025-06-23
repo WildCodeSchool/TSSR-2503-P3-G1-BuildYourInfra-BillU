@@ -1,6 +1,6 @@
 # Guide d'installation Sprint 7
 
-## Sommaire
+## 📜 Sommaire
 
 ### 1. [Distribution des rôles FSMO](#fsmo)
 ### 2. [PC d'administration](#admin)
@@ -12,5 +12,5 @@
 
 ### Transfert des rôles avec NTDSUTIL
 
-## PC d'administration
+## 🖥️ PC d'administration
 <span id="admin"></span>
