@@ -47,29 +47,39 @@ L'ajout a été fait via le controleur de domaine sur Windows Server Core.
 
 ### Transfert des rôles avec NTDSUTIL
 
+Pour transférer les rôles FSMO aux différents contrôleurs du domaine, nous utilisons l'utilitaire NTDSUTIL.
+
+Lancez l'utilitaire en tapant la commande suivante dans PowerShell :
+
 ```powershell
 ntdsutil.exe
 ```
+
+Une fois l'utilitaire lancé, nous passons en mode **fsmo maintenance** avec la commande suivante :
 
 ```powershell
 role
 ```
 
+Pour transférer des rôles à un contrôleur de domaine spécifique, nous entrons dans le mode **connections** :
+
 ```powershell
 connections
 ```
+
+Puis nous établissons la connection au serveur **WINSRVCORE01** :
 
 ```powershell
 connect to server WINSRVCORE01
 ```
 
-```powershell
-connect to server WINSRVCORE02
-```
+On peut alors sortir de ce mode :
 
 ```powershell
 q
 ```
+
+Une fois revenus au mode **fsmo maintenance**, nous transférons les droits **Schema Master** et **Infrastructure Master** à **SRVWINCORE01** à l'aide des commandes suivantes :
 
 ```powershell
 transfer schema master
@@ -79,9 +89,47 @@ transfer schema master
 transfer infrastructure master
 ```
 
+Nous pouvons désormais transferer le rôle **PDC** à **SRVWINCORE02**.
+
+Pour transférer des rôles à un contrôleur de domaine spécifique, nous entrons dans le mode **connections** :
+
+```powershell
+connections
+```
+
+Puis nous établissons la connection au serveur **WINSRVCORE02** :
+
+```powershell
+connect to server WINSRVCORE02
+```
+
+On peut alors sortir de ce mode :
+
+```powershell
+q
+```
+
+Et enfin, nous lui transférons le rôle **PDC** :
+
 ```powershell
 transfer pdc
 ```
+
+On peut sortir de l'utilitaire NTDSUTIL en répétant la commande suivante :
+
+```powershell
+q
+```
+
+Une fois sortis de cet utilitaire, nous vérifions que la distribution des rôles est bien faite avec la commande :
+
+```powershell
+netdom query fsmo
+```
+
+Ce qui doit nous donner le résultat suivant :
+
+![Rôles FSMO](Ressources/Rôles_FSMO.png)
 
 ## 🖥️ PC d'administration
 <span id="admin"></span>
