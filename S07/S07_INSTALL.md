@@ -10,6 +10,17 @@
 
 Afin de distribuer les rôles FSMO, nous allons créer une nouvelle machine Windows Server Core.
 
+Les rôles seront répartis de la manière suivante entre nos 3 machines :
+
+| Rôle | Machine |
+| ---- | ---- | 
+| RID Master | WINSRVGUI01 |
+| Domain Naming Master | WINSRVGUI01 |
+| Infrastructure Master | WINSRVCORE01 |
+| Schema Master | WINSRVCORE01 |
+| PDC | WINSRVCORE02 |
+
+
 ### Création d'un nouveau Windows Server Core
 
 Pour la machine Windows Server Core, nous avons fait un clone de la machine template Windows Server Core sur Proxmox.
@@ -61,15 +72,11 @@ q
 ```
 
 ```powershell
-transfer RID master
-```
-
-```powershell
 transfer schema master
 ```
 
 ```powershell
-transfer domain naming master
+transfer infrastructure master
 ```
 
 ```powershell
