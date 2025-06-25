@@ -173,7 +173,7 @@ L'ajout du rôle WSUS se fait via l'utilitaire d'ajout de rôles, depuis notre s
 
 Nous suivons les instructions de l'utilitaire d'ajout de rôle sans modifier les options préconisées.
 
-Lorsque nous devons ajouter 
+Le dossier de stockage des mises à jour de WSUS est `C:\WSUS`.
 
 ### Configuration de WSUS
 
