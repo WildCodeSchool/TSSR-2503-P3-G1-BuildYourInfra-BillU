@@ -171,4 +171,9 @@ L'ajout a été fait via le controleur de domaine sur Windows Server Core.
 
 L'ajout du rôle WSUS se fait via l'utilitaire d'ajout de rôles, depuis notre serveur en GUI.
 
+Nous suivons les instructions de l'utilitaire d'ajout de rôle sans modifier les options préconisées.
+
+Lorsque nous devons ajouter 
+
 ### Configuration
+
