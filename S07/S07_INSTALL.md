@@ -138,3 +138,37 @@ Ce qui doit nous donner le résultat suivant :
 
 ## 🛠️ Serveur de gestion de mises à jour WSUS
 <span id="wsus"></span>
+
+Afin de gérer les mises à jour à l'aide de WSUS, nous allons créer une nouvelle machine Windows Server Core.
+
+Son addresse sur le serveur sera _172.16.10.9_
+
+### Création d'un nouveau Windows Server Core
+
+Pour la machine Windows Server Core, nous avons fait un clone de la machine template Windows Server Core sur Proxmox.
+
+#### Réseau
+
+- Configuration IP du serveur Windows Core  
+
+`New-NetIPAddress -InterfaceAlias "Ethernet" -IPAddress "172.16.10.9" -PrefixLength 24 -DefaultGateway "172.16.10.254"`
+
+- Paramétrage du DNS via le choix n°8 dans le menu du serveur.
+
+Nous avons ajouté l'IP du contrôleur de domaine en DNS principal soit : 
+
+`172.16.10.1`
+
+En DNS secondaire nous avons indiqué la boucle locale du Windows Server Core
+
+`127.0.0.1`
+
+#### Intégration au domaine billu.lan 
+
+L'ajout a été fait via le controleur de domaine sur Windows Server Core.
+
+### Ajout du rôle WSUS
+
+L'ajout du rôle WSUS se fait via l'utilitaire d'ajout de rôles, depuis notre serveur en GUI.
+
+### Configuration
