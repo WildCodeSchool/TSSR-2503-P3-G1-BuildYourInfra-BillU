@@ -4,6 +4,7 @@
 
 ### 1. [Distribution des rôles FSMO](#fsmo)
 ### 2. [PC d'administration](#admin)
+### 3. [Serveur de gestion de mises à jour WSUS](#wsus)
 
 ## 🎭 Distribution des rôles FSMO
 <span id="fsmo"></span>
@@ -133,3 +134,7 @@ Ce qui doit nous donner le résultat suivant :
 
 ## 🖥️ PC d'administration
 <span id="admin"></span>
+
+
+## 🛠️ Serveur de gestion de mises à jour WSUS
+<span id="wsus"></span>
