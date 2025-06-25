@@ -177,4 +177,6 @@ Le dossier de stockage des mises à jour de WSUS est `C:\WSUS`.
 
 ### Configuration de WSUS
 
+https://www.stephenwagner.com/2019/05/15/guide-using-installing-wsus-windows-server-core-2019/
+
 La configuration de WSUS se fait depuis le PC d'administration sur lequel nous avons installé RSAT.
