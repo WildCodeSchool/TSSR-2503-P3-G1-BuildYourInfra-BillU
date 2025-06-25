@@ -84,10 +84,10 @@ La collaboration avec des prestataires extérieurs, intégrés selon les besoins
 
 | Membre         | Rôle          | Missions                                                                   |
 | -------------- | ------------- | -------------------------------------------------------------------------- |
-| Bertrand       |  |   |
-| Brendan        |  |   |
-| Killian        |  |   |
-| Tatiana        |  |   |
+| Bertrand       | Scrum Master  | PC d'administration, WSUS  |
+| Brendan        | Technicien    | FSMO, WSUS  |
+| Killian        | Technicien    | FSMO, WSUS  |
+| Tatiana        | Product Owner | PC d'administration, WSUS  |
 
 ### Sprint 8
 
