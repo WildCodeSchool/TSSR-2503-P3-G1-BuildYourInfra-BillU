@@ -175,5 +175,5 @@ Nous suivons les instructions de l'utilitaire d'ajout de rôle sans modifier les
 
 Lorsque nous devons ajouter 
 
-### Configuration
+### Configuration de WSUS
 
