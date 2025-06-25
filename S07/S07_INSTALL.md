@@ -177,4 +177,4 @@ Le dossier de stockage des mises à jour de WSUS est `C:\WSUS`.
 
 ### Configuration de WSUS
 
-La configuration de WSUS s'est faite depuis le PC d'administration sur lequel nous avons installé RSAT.
+La configuration de WSUS se fait depuis le PC d'administration sur lequel nous avons installé RSAT.
