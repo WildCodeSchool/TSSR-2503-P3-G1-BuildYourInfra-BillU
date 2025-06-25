@@ -139,29 +139,19 @@ Ce qui doit nous donner le résultat suivant :
 ## 🛠️ Serveur de gestion de mises à jour WSUS
 <span id="wsus"></span>
 
-Afin de gérer les mises à jour à l'aide de WSUS, nous allons créer une nouvelle machine Windows Server Core.
+Afin de gérer les mises à jour à l'aide de WSUS, nous allons créer une nouvelle machine Windows Server.
 
-Son addresse sur le serveur sera _172.16.10.9_
+Son addresse sur le serveur sera _172.16.10.11_
 
-### Création d'un nouveau Windows Server Core
+### Création d'un nouveau Windows Server
 
 Pour la machine Windows Server Core, nous avons fait un clone de la machine template Windows Server Core sur Proxmox.
 
 #### Réseau
 
-- Configuration IP du serveur Windows Core  
+L'adresse IP fixe de ce nouveau serveur est _172.16.10.11_. 
 
-`New-NetIPAddress -InterfaceAlias "Ethernet" -IPAddress "172.16.10.9" -PrefixLength 24 -DefaultGateway "172.16.10.254"`
-
-- Paramétrage du DNS via le choix n°8 dans le menu du serveur.
-
-Nous avons ajouté l'IP du contrôleur de domaine en DNS principal soit : 
-
-`172.16.10.1`
-
-En DNS secondaire nous avons indiqué la boucle locale du Windows Server Core
-
-`127.0.0.1`
+Il faut penser à également configurer le DNS préféré (_172.16.10.1_) afin de l'intégrer convenablement au domaine.
 
 #### Intégration au domaine billu.lan 
 
@@ -169,14 +159,10 @@ L'ajout a été fait via le controleur de domaine sur Windows Server Core.
 
 ### Ajout du rôle WSUS
 
-L'ajout du rôle WSUS se fait via l'utilitaire d'ajout de rôles, depuis notre serveur en GUI.
+L'ajout du rôle WSUS se fait via l'utilitaire d'ajout de rôles.
 
 Nous suivons les instructions de l'utilitaire d'ajout de rôle sans modifier les options préconisées.
 
 Le dossier de stockage des mises à jour de WSUS est `C:\WSUS`.
 
 ### Configuration de WSUS
-
-https://www.stephenwagner.com/2019/05/15/guide-using-installing-wsus-windows-server-core-2019/
-
-La configuration de WSUS se fait depuis le PC d'administration sur lequel nous avons installé RSAT.
