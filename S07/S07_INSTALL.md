@@ -301,19 +301,40 @@ Afin d'implémenter nos stratégies de mise à jour, nous devons créer 3 GPOs :
 
 Le paramétrage ci-dessous est commun à toutes les GPO :
 
-Dans Specify intranet Microsoft update service location, qui indiquera où est le serveur de mise à jour.
- * Cocher Enabled
- * Dans les options, pour les 2 premiers champs, mettre l'URL avec le nom du serveur sous sa forme FQDN, ajouter le numéro du port 8530, soit ``
+Dans **Specify intranet Microsoft update service location** :
+ * Cocher **Enabled**
+ * Dans les options, pour les 2 premiers champs, mettre l'URL avec le nom du serveur sous sa forme FQDN, ajouter le numéro du port 8530, soit _http://winservgui02.bllu.lan:8530_
  * Valider la configuration
 
-Dans Do not connect to any Windows Update Internet locations qui bloque la connexion aux serveurs de Microsoft
- * Cocher Enabled et valider la configuration
+Dans **Do not connect to any Windows Update Internet locations** :
+ * Cocher **Enabled** et valider la configuration
 
 ##### WSUS - Clients
 
+Dans **Configure automatic updates** :
+* Cocher **Enabled**
+* Sélectionner **4 - Auto download and schedule the install**
+* Sélectionner **Everyday**
+* Sélectionner **12:00**
+* Valider
+
 ##### WSUS - Serveurs
 
+Dans **Configure automatic updates** :
+* Cocher **Enabled**
+* Sélectionner **3 - Auto download and notify for install**
+* Sélectionner **Everyday**
+* Sélectionner **3:00**
+* Valider
+
 ##### WSUS - DC
+
+Dans **Configure automatic updates** :
+* Cocher **Enabled**
+* Sélectionner **7 - Auto download, notify for install, notify to restart**
+* Sélectionner **Everyday**
+* Sélectionner **3:00**
+* Valider
 
 ## 🛠️ Installation Serveur GLPI et Liaison à l'Active Directory
 <span id="GLPI/Active_Directory"></span>
