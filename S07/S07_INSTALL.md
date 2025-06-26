@@ -294,7 +294,7 @@ Le dossier de stockage des mises à jour de WSUS est `C:\WSUS`.
 ## 🛠️ Installation Serveur GLPI et Liaison à l'Active Directory
 <span id="GLPI/Active_Directory"></span>
 
-### Installation d'un serveur GLPI sur le serveur Debian
+### 1.Installation d'un serveur GLPI sur le serveur Debian
 
 **<ins>Pré requis:</ins>**
 - Un serveur: Ici, nous avons pris une Debian avec une adresse Ip 172.16.10.324
@@ -332,7 +332,9 @@ Le dossier de stockage des mises à jour de WSUS est `C:\WSUS`.
   -  Configuration de PHP / Editer du fichier /etc/php/8.1/apache2/php.ini `nano /etc/php/8.1/apache2/php.ini`
   > - Modification des paramètres -> memory_limit = 64M # <= à changer #vers ligne 435
   > - Max_execution_time = 600 # <= à changer #vers ligne 410
+  - Enregistrer et quitter
   - Redémarrer le serveur.
+  - - **Pour la liaison** -> Tapez les commandes `sudo apt-get update` et `sudo apt-get install php-ldap` **Obligatoire**
 
 ### Sur la machine cliente Windows server
 
@@ -356,5 +358,21 @@ A la fin, vous tomberez sur cette page internet
 Pour le mode "super administrateur"
 
 ![image](Ressources/GLPI.png)
+
+### 2.Liaison à l'Active Directoy
+
+- Aller dans Configuration et Authentification
+ ![image](Ressources/Configuration.png)
+
+- Annuaire LDAP
+![image](Ressources/Annuaire.png)
+
+- Ajouter
+![image](Ressources/Ajouter.png)
+
+- Et on tombe sur "Nouvel élément - Annuaire LDAP"
+![image](Ressources/Annuaire_LDAP.png)
+
+
 
 
