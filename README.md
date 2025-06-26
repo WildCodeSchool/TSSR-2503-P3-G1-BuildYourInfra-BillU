@@ -170,6 +170,10 @@ Le sprint était également un peu court.
 
 Nous avons d'abord voulu faire nos sauvegardes à l'aide de Bareos, ce qui a été complexe et nous a ralentis. L'installation de Zabbix a été relativement complexe, surtout à cause de la configuration de la base de données en MySQL.
 
+### Sprint 7
+
+WSUS.
+
 ## 💡 Solutions trouvées
 
 ### Sprint 1
@@ -191,5 +195,9 @@ Nous avons suivi un [tutoriel](https://support.microsoft.com/en-us/topic/error-m
 ### Sprint 5
 
 Nous avons finalement décidé de mettre en place nos sauvegardes à l'aide de Wiondows Server Backup.
+
+### Sprint 7
+
+
 
 ## 🚀 Améliorations possibles
