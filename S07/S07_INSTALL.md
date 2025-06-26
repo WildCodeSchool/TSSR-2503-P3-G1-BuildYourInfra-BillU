@@ -296,11 +296,11 @@ Le dossier de stockage des mises à jour de WSUS est `C:\WSUS`.
 
 ### Installation d'un serveur GLPI
 
-<ins>Pré requis:</ins>
+**<ins>Pré requis:</ins>**
 - Un serveur: Ici, nous avons pris une Debian avec une adresse Ip 172.16.10.324
 - Un serveur AD: Ici, nous avons pris une Windows server avec une adresse IP 172.16.10.1/24
 
-<ins>Commandes pour l'installation sur le serveur Debian:</ins>
+**<ins>Commandes pour l'installation sur le serveur Debian:</ins>**
 
 - Mises à jour du serveur `apt update && apt upgrade -y`
 - Installation Apache `apt install apache2 -y`
