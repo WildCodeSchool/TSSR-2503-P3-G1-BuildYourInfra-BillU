@@ -5,7 +5,7 @@
 ### 1. [Distribution des rôles FSMO](#fsmo)
 ### 2. [PC d'administration](#admin)
 ### 3. [Serveur de gestion de mises à jour WSUS](#wsus)
-### 4. [Serveur GLPI](#GLPI)
+### 4. [Installation Serveur GLPI et Liaison à l'Active Directory](#GLPI/Active Directory)
 
 ## 🎭 Distribution des rôles FSMO
 <span id="fsmo"></span>
@@ -291,7 +291,7 @@ Le dossier de stockage des mises à jour de WSUS est `C:\WSUS`.
 ### Configuration de WSUS
 
 
-## 🛠️ Serveur GLPI
+## 🛠️ Installation Serveur GLPI et Liaison à l'Active Directory
 <span id="GLPI"></span>
 
 ### Installation d'un serveur GLPI sur le serveur Debian
