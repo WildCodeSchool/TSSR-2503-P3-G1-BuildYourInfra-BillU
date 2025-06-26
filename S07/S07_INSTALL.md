@@ -362,15 +362,19 @@ Pour le mode "super administrateur"
 ### 2.Liaison à l'Active Directoy
 
 - Aller dans Configuration et Authentification
+---
  ![image](Ressources/Configuration.png)
 
 - Annuaire LDAP
+---
 ![image](Ressources/Annuaire.png)
 
 - Ajouter
+---
 ![image](Ressources/Ajouter.png)
 
 - Et on tombe sur "Nouvel élément - Annuaire LDAP"
+---
 ![image](Ressources/Annuaire_LDAP.png)
 
 
