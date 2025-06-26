@@ -350,3 +350,12 @@ Pour le SETUP :
 
 Choisir la base de données créer : glpidb
 
+A la fin, vous tomberez sur cette page internet
+- Identifiant: glpi
+- MDP: glpi
+Pour le mode "super administrateur"
+
+![image](S07/Ressources/GLPI.png)
+
+
+
