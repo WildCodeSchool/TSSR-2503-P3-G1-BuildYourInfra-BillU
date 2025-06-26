@@ -294,7 +294,7 @@ Le dossier de stockage des mises à jour de WSUS est `C:\WSUS`.
 ## 🛠️ Serveur GLPI et liaison à l'Active Directory
 <span id="GLPI"></span>
 
-### Installation d'un serveur GLPI
+### Installation d'un serveur GLPI sur le serveur Debian
 
 **<ins>Pré requis:</ins>**
 - Un serveur: Ici, nous avons pris une Debian avec une adresse Ip 172.16.10.324
@@ -334,6 +334,19 @@ Le dossier de stockage des mises à jour de WSUS est `C:\WSUS`.
   > - Max_execution_time = 600 # <= à changer #vers ligne 410
   - Redémarrer le serveur.
 
+### Sur la machine cliente Windows server
 
+Depuis le navigateur web: http://172.16.10.3/glpi.billu.lan/ (Mettre l'adresse de sons serveur GLPI)
 
+Sur la page d'installation :
+- Langue : **Français**
+- Cliquer sur **Installer**
+- Corriger éventuellement les **requis**
+
+Pour le SETUP :
+- Serveur SQL : 127.0.0.1
+- Utilisateur : glpi
+- Mot de passe : Azerty1*
+
+Choisir la base de données créer : glpidb
 
