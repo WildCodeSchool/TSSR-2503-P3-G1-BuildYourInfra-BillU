@@ -318,8 +318,8 @@ Le dossier de stockage des mises à jour de WSUS est `C:\WSUS`.
 - Dans la configuration de Mariadb, nous avons mis
   > Nom de la BDD : glpidb
   - `create database glpidb character set utf8 collate utf8_bin;`
-  > Compte d accès à la BDD glpidb : glpi
-  > mot de passe du compte glpi : Azerty1*
+  > - Compte d accès à la BDD glpidb : glpi
+  > - Mot de passe du compte glpi : Azerty1*
   - `grant all privileges on glpidb.* to glpi@localhost identified by "Azerty1*";`
   - `flush privileges;`
   - `quit`
@@ -330,8 +330,8 @@ Le dossier de stockage des mises à jour de WSUS est `C:\WSUS`.
   -  Suppression du fichier index.php dans /var/www/html `rm /var/www/html/index.html`
   -  Mettre les droits nécessaires aux fichiers `chown -R www-data:www-data /var/www/html/glpi.billu.lan` et `chmod -R 775 /var/www/html/glpi.billu.lan` (Mettre selon vos besoins)
   -  Configuration de PHP / Editer du fichier /etc/php/8.1/apache2/php.ini `nano /etc/php/8.1/apache2/php.ini`
-  >  Modification des paramètres -> memory_limit = 64M # <= à changer #vers ligne 435
-  >  max_execution_time = 600 # <= à changer #vers ligne 410
+  > - Modification des paramètres -> memory_limit = 64M # <= à changer #vers ligne 435
+  > - Max_execution_time = 600 # <= à changer #vers ligne 410
   - Redémarrer le serveur.
 
 
