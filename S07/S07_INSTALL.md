@@ -291,7 +291,7 @@ Le dossier de stockage des mises à jour de WSUS est `C:\WSUS`.
 ### Configuration de WSUS
 
 
-## 🛠️ Serveur GLPI et liaison à l'Active Directory
+## 🛠️ Serveur GLPI
 <span id="GLPI"></span>
 
 ### Installation d'un serveur GLPI sur le serveur Debian
