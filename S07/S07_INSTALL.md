@@ -355,7 +355,6 @@ A la fin, vous tomberez sur cette page internet
 - MDP: glpi
 Pour le mode "super administrateur"
 
-![image](S07/Ressources/GLPI.png)
-
+![image](Ressources/GLPI.png)
 
 
