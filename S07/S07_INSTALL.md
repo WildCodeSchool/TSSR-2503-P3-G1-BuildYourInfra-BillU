@@ -286,10 +286,34 @@ L'ajout du rôle WSUS se fait via l'utilitaire d'ajout de rôles.
 
 Nous suivons les instructions de l'utilitaire d'ajout de rôle sans modifier les options préconisées.
 
-Le dossier de stockage des mises à jour de WSUS est `C:\WSUS`.
+Le dossier de stockage des mises à jour de WSUS est `E:\WSUS'.
 
 ### Configuration de WSUS
 
+Dans la console WSUS, nous créons trois groupes pour gérer nos mises à jour : **DC**, **Serveurs** et **Clients**. Ainsi, les politiques de mise à jour seront différentes en fonction des machines.
+
+#### Configuration par GPO
+
+Afin d'implémenter nos stratégies de mise à jour, nous devons créer 3 GPOs :
+* WSUS - Clients
+* WSUS - Serveurs
+* WSUS - DC
+
+Le paramétrage ci-dessous est commun à toutes les GPO :
+
+Dans Specify intranet Microsoft update service location, qui indiquera où est le serveur de mise à jour.
+ * Cocher Enabled
+ * Dans les options, pour les 2 premiers champs, mettre l'URL avec le nom du serveur sous sa forme FQDN, ajouter le numéro du port 8530, soit ``
+ * Valider la configuration
+
+Dans Do not connect to any Windows Update Internet locations qui bloque la connexion aux serveurs de Microsoft
+ * Cocher Enabled et valider la configuration
+
+##### WSUS - Clients
+
+##### WSUS - Serveurs
+
+##### WSUS - DC
 
 ## 🛠️ Installation Serveur GLPI et Liaison à l'Active Directory
 <span id="GLPI/Active_Directory"></span>
