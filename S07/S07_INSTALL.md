@@ -377,6 +377,42 @@ Pour le mode "super administrateur"
 
 ![image](Ressources/Annuaire_LDAP.png)
 
+- Remplir l'annuaire 
+> - Nom : le nom de cet annuaire LDAP
+> - Serveur par défaut: oui
+> - Actif : oui
+> - Serveur : adresse IP du contrôleur de domaine à interroger: ici 172.16.10.3
+> - Port : 389, qui est le port par défaut du protocole LDAP
+> - Filtre de connexion : requête LDAP pour rechercher les objets dans l'annuaire Active Directory: En haut de page on a "Active directory / OpenLDAP / Valeurs par défaut" -> Cliquer sur Active Directory et une ligne va apparaître dans le filtre de connexion.
+- elle veut dire:
+> - 👉 Je veux tous les objets qui sont des utilisateurs
+> - 👉 Qui sont des personnes (et pas des ordinateurs)
+> - 👉 Et qui ne sont pas désactivé
+> - BaseDN : où faut-il se positionner dans l'annuaire pour rechercher les utilisateurs ? ici OU=Utlisateurs,OU=Billu,DC=billan,DC=lan
+> - Utiliser bind : à positionner sur "Oui" pour du LDAP classique (sans TLS)
+> - DN du compte : le nom du compte à utiliser pour se connecter à l'Active Directory: ici CN=Synchro_GLPI,OU=Connecteurs,DC=billu,DC=lan
+> - Mot de passe du compte : le mot de passe du compte renseigné ci-dessus
+> - Champ de l'identifiant : UserPrincipalName ou SamAccountName (selon vos besoins)
+> - Champ de synchronisation : GLPI a besoin d'un champ sur lequel s'appuyer pour synchroniser les objets: ici objectguid pour avoir une valeur unique de chaque utilisateurs.
+
+A la fin, vous devez avoir quelque chose qui ressemble à ça
+
+![image](Ressources/Annuaire_Rempli.png)
+
+> - Sauveegarder
+
+![image](Ressources/Sauvegarde.png)
+
+Vous pouvez tester la connection en cliquant sur le nom de votre serveur
+
+![image](Ressources/Test.png)
+
+Voilà, votre serveur Active Directory et lié à votre Annuaire LDAP !
+
+
+
+
+
 
 
 
