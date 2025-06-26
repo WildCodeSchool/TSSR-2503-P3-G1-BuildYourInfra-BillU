@@ -289,3 +289,51 @@ Nous suivons les instructions de l'utilitaire d'ajout de rôle sans modifier les
 Le dossier de stockage des mises à jour de WSUS est `C:\WSUS`.
 
 ### Configuration de WSUS
+
+
+## 🛠️ Serveur GLPI et liaison à l'Active Directory
+<span id="GLPI"></span>
+
+### Installation d'un serveur GLPI
+
+<ins>Pré requis:</ins>
+- Un serveur: Ici, nous avons pris une Debian avec une adresse Ip 172.16.10.324
+- Un serveur AD: Ici, nous avons pris une Windows server avec une adresse IP 172.16.10.1/24
+
+<ins>Commandes pour l'installation sur le serveur Debian:</ins>
+
+- Mises à jour du serveur `apt update && apt upgrade -y`
+- Installation Apache `apt install apache2 -y`
+- Activation d'Apache au démarrage de la machine `systemctl enable apache2`
+- Vérification du status d'Apache `systemctl status apache2` il doit être en vert "Running"
+- Installation de la BDD mariahdb `apt install mariadb-server -y`
+- PHP: Installation des dépendances `apt install ca-certificates apt-transport-https software-properties-common lsb-release curl lsb-release -y`
+- Ajout du dépôt pour PHP 8.1 `curl -sSL https://packages.sury.org/php/README.txt | bash -x`
+- Mise à jour `apt update`
+- Installation de PHP 8.1 `apt install php8.1 -y`
+- Installation des modules annexes `apt install php8.1 libapache2-mod-php -y` et `apt install php8.1-{ldap,imap,apcu,xmlrpc,curl,common,gd,mbstring,mysql,xml,intl,zip,bz2} -y`
+- Installation de Mariadb `mysql_secure_installation`
+  > A la suite de cette commande, plusieurs questions vous seront posées comme **Mot de passe du compte root?** ou encore **changer le mot de passe du compte root?** A répondre selon ce que vos besoins.
+- Configuration de la base de données `mysql -u root -p`
+- Dans la configuration de Mariadb, nous avons mis
+  > Nom de la BDD : glpidb
+  - `create database glpidb character set utf8 collate utf8_bin;`
+  > Compte d accès à la BDD glpidb : glpi
+  > mot de passe du compte glpi : Azerty1*
+  - `grant all privileges on glpidb.* to glpi@localhost identified by "Azerty1*";`
+  - `flush privileges;`
+  - `quit`
+  -  Ressources de GLPI dans Github / Téléchargement des sources `wget https://github.com/glpi-project/glpi/releases/download/10.0.15/glpi-10.0.15.tgz`
+  -  Création du dossier pour glpi `mkdir /var/www/html/glpi.billu.lan` (Mettre votre nom de domaine AD)
+  -  Décompression du contenu téléchargé `tar -xzvf glpi-10.0.15.tgz`
+  -  Copie du dossier décompréssé vers le nouveau crée `cp -R glpi/* /var/www/html/glpi.billu.lan`
+  -  Suppression du fichier index.php dans /var/www/html `rm /var/www/html/index.html`
+  -  Mettre les droits nécessaires aux fichiers `chown -R www-data:www-data /var/www/html/glpi.billu.lan` et `chmod -R 775 /var/www/html/glpi.billu.lan` (Mettre selon vos besoins)
+  -  Configuration de PHP / Editer du fichier /etc/php/8.1/apache2/php.ini `nano /etc/php/8.1/apache2/php.ini`
+  >  Modification des paramètres -> memory_limit = 64M # <= à changer #vers ligne 435
+  >  max_execution_time = 600 # <= à changer #vers ligne 410
+  - Redémarrer le serveur.
+
+
+
+
