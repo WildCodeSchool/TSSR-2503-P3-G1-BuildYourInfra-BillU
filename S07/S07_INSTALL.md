@@ -5,7 +5,7 @@
 ### 1. [Distribution des rôles FSMO](#fsmo)
 ### 2. [PC d'administration](#admin)
 ### 3. [Serveur de gestion de mises à jour WSUS](#wsus)
-### 4. [Installation Serveur GLPI et Liaison à l'Active Directory](#GLPI/Active Directory)
+### 4. [Installation Serveur GLPI et Liaison à l'Active Directory](#GLPI/Active_Directory)
 
 ## 🎭 Distribution des rôles FSMO
 <span id="fsmo"></span>
