@@ -5,3 +5,7 @@
 
 ## GLPI
 <span id="GLPI/Active_Directory"></span>
+
+<ins>GLPI super Administrateur</ins>
+
+
