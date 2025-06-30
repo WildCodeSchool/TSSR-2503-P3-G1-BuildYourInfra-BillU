@@ -93,19 +93,19 @@ La collaboration avec des prestataires extérieurs, intégrés selon les besoins
 
 | Membre         | Rôle          | Missions                                                                   |
 | -------------- | ------------- | -------------------------------------------------------------------------- |
-| Bertrand       |  |   |
-| Brendan        |  |   |
-| Killian        |  |   |
-| Tatiana        |  |   |
+| Bertrand       | Technicien    |                                                                            |
+| Brendan        | Technicien    |                                                                            |
+| Killian        | Product Owner |                                                                            |
+| Tatiana        | Scrum Master  |                                                                            |
 
 ### Sprint 9
 
 | Membre         | Rôle          | Missions                                                                   |
 | -------------- | ------------- | -------------------------------------------------------------------------- |
-| Bertrand       |  |   |
-| Brendan        |  |   |
-| Killian        |  |   |
-| Tatiana        |  |   |
+| Bertrand       |     |                                                                            |
+| Brendan        |     |                                                                            |
+| Killian        |  |                                                                            |
+| Tatiana        |   |                                                                            |
 
 ### Sprint 10
 
@@ -197,7 +197,5 @@ Nous avons suivi un [tutoriel](https://support.microsoft.com/en-us/topic/error-m
 Nous avons finalement décidé de mettre en place nos sauvegardes à l'aide de Wiondows Server Backup.
 
 ### Sprint 7
-
-
 
 ## 🚀 Améliorations possibles
