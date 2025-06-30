@@ -93,19 +93,19 @@ La collaboration avec des prestataires extérieurs, intégrés selon les besoins
 
 | Membre         | Rôle          | Missions                                                                   |
 | -------------- | ------------- | -------------------------------------------------------------------------- |
-| Bertrand       | Technicien |   |
-| Brendan        | Technicien|    |
-| Killian        | Product Owner |   |
-| Tatiana        | Scrum Master |   |
+| Bertrand       | Technicien    |                                                                            |
+| Brendan        | Technicien    |                                                                            |
+| Killian        | Product Owner |                                                                            |
+| Tatiana        | Scrum Master  |                                                                            |
 
 ### Sprint 9
 
 | Membre         | Rôle          | Missions                                                                   |
 | -------------- | ------------- | -------------------------------------------------------------------------- |
-| Bertrand       | Technicien    |                                                                            |
-| Brendan        | Technicien    |                                                                            |
-| Killian        | Product Owner |                                                                            |
-| Tatiana        | Scrum Master  |                                                                            |
+| Bertrand       |     |                                                                            |
+| Brendan        |     |                                                                            |
+| Killian        |  |                                                                            |
+| Tatiana        |   |                                                                            |
 
 ### Sprint 10
 
