@@ -1,6 +1,6 @@
 # 💸 BillU
 
-![Logo de BillU](S01/Ressources/billu.png)
+![Logo de BillU](S01/Ressources/change_le_fond_en_pl.png)
 
 ## 🎯 Présentation générale du projet
 
