@@ -198,6 +198,8 @@ Nous avons finalement décidé de mettre en place nos sauvegardes à l'aide de W
 
 ### Sprint 7
 
+### Sprint 8
 
+Partenariat : 2 objectifs de groupe à choisir. 1 Principal et 1 Secondaire. 3 objectifs communs à choisir : 2 Principaux et 1 Secondaire.
 
 ## 🚀 Améliorations possibles
