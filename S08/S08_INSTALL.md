@@ -221,7 +221,7 @@ Ajouter une Phase 2 avec **Add P2**.
 Remplir le nom souhaité en **Description** et l'adresse IP cible en **Remote Network**. Ici, nous choississons 172.16.20.0 etant l'adresse IP de l'interface LAN du réseau auquel accéder.  
 ![configP2](Ressources/VPN-ConfigP2.png)  
 
-Choisir l'algorithme de chiffrement et sauvegarder.
+Choisir l'algorithme de chiffrement et sauvegarder. Doit être la même sur les deux PC. Ici **Azerty1***
 
 Créer la règle. Pour cela, se rendre dans **Firewall, Rules**, puis sur l'inteeface **IPsec**.  
 ![regle](Ressources/VPN-Rules.png)
@@ -235,3 +235,6 @@ Pour finir, se rendre dans **Status, IPsec**
 ![connexion](Ressources/VPN-connexion.png)  
 Activer P1 et P2 créés  
 ![activation](Ressources/VPN-activation.png)
+
+Connexion établie
+
