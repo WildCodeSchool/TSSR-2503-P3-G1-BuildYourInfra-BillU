@@ -237,4 +237,4 @@ Activer P1 et P2 créés
 ![activation](Ressources/VPN-activation.png)
 
 Connexion établie
-
+![réussie](Ressources/Connexion_Reussie.png)
