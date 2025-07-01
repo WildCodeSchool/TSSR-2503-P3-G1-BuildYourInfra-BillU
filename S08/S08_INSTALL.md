@@ -218,7 +218,7 @@ Entrer également une clé. Cette clé est commune avec la configuration de la P
 Choisir l'algorithme de chiffrement et sauvegarder.
 
 Ajouter une Phase 2 avec **Add P2**.  
-Remplir le nom souhaité en **Description** et l'adresse IP cible en **Remote Network**. Ici, nous choississons 172.16.10.0 etant l'adresse IP de l'interface LAN de notre réseau auquel accéder.  
+Remplir le nom souhaité en **Description** et l'adresse IP cible en **Remote Network**. Ici, nous choississons 172.16.20.0 etant l'adresse IP de l'interface LAN du réseau auquel accéder.  
 ![configP2](Ressources/VPN-ConfigP2.png)  
 
 Choisir l'algorithme de chiffrement et sauvegarder.
