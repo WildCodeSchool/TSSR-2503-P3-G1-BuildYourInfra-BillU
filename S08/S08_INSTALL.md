@@ -1,7 +1,13 @@
 Partenariat : 2 objectifs de groupe à choisir. 1 Principal et 1 Secondaire. 3 objectifs communs à choisir : 2 Principaux et 1 Secondaire.
 
+### 1. [Installation Guacamole (Serveur bastion)](#guacamole)
+### 2. [Mise en place d'un VPN site à site](#VPN_site2site)
+
+
+
 
 ### 1. Installation Guacamole (Serveur bastion)
+<span id="guacamole"></span>
 
 ####    1.1 Guacamole  Server
 
@@ -193,3 +199,39 @@ La nouvelle connexion apparaît sous "Serveurs applications".
 Pour tester cette connexion, il faut basculer sur "Accueil" en cliquant sur son identifiant en haut à droite.
 
 
+
+### 2. Mise en place d'un VPN site à site
+<span id="VPN_site2site"></span>
+
+Accéder à pfsense via le navigateur avec comme adresse http://<IP_pfsense>
+
+Dans la rubrique VPN, accéder à IPsec :  
+![ipsec](Ressources/VPN-ipsec.png)
+
+Ajouter une Phase 1 :  
+![additionP1](Ressources/VPN-AddP1.png)
+
+Remplir le nom souhaité en **Description** et l'adresse IP cible en **Remote Gateway**. Ici, nous choississons 10.0.0.3 etant l'adresse IP de l'interface WAN du réseau auquel accéder.  
+![configP1](Ressources/VPN-ConfigP1.png)
+
+Entrer également une clé. Cette clé est commune avec la configuration de la Phase 1 du pfsense du réseau auquel accéder.  
+Choisir l'algorithme de chiffrement et sauvegarder.
+
+Ajouter une Phase 2 avec **Add P2**.  
+Remplir le nom souhaité en **Description** et l'adresse IP cible en **Remote Network**. Ici, nous choississons 172.16.10.0 etant l'adresse IP de l'interface LAN de notre réseau auquel accéder.  
+![configP2](Ressources/VPN-ConfigP2.png)  
+
+Choisir l'algorithme de chiffrement et sauvegarder.
+
+Créer la règle. Pour cela, se rendre dans **Firewall, Rules**, puis sur l'inteeface **IPsec**.  
+![regle](Ressources/VPN-Rules.png)
+
+Cliquer sur **Add**
+Paramétrer la règle comme ci-dessous et sauvegarder :  
+![configP2](Ressources/VPN-ConfigRule.png)  
+L'idée est que les paquets arrivant à l'interface seront issus du réseau du site à intégrer, donc, si leur parefeu est bien configuré, il n'y a pas de règle supplémentaire à ajouter. On peut donc autoriser les paquets de tous protocoles et toutes sources. 
+
+Pour finir, se rendre dans **Status, IPsec**   
+![connexion](Ressources/VPN-connexion.png)  
+Activer P1 et P2 créés  
+![activation](Ressources/VPN-activation.png)
