@@ -211,7 +211,7 @@ Dans la rubrique VPN, accéder à IPsec :
 Ajouter une Phase 1 :  
 ![additionP1](Ressources/VPN-AddP1.png)
 
-Remplir le nom souhaité en **Description** et l'adresse IP cible en **Remote Gateway**. Ici, nous choississons 10.0.0.3 etant l'adresse IP de l'interface WAN du réseau auquel accéder.  
+Remplir le nom souhaité en **Description** et l'adresse IP cible en **Remote Gateway**. Ici, nous choississons 192.168.1.3 etant l'adresse IP de l'interface WAN du réseau auquel accéder.  
 ![configP1](Ressources/VPN-ConfigP1.png)
 
 Entrer également une clé. Cette clé est commune avec la configuration de la Phase 1 du pfsense du réseau auquel accéder.  
