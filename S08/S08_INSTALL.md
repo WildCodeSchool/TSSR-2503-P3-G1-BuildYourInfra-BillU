@@ -2,8 +2,8 @@ Partenariat : 2 objectifs de groupe à choisir. 1 Principal et 1 Secondaire. 3 o
 
 ### 1. [Installation Guacamole (Serveur bastion)](#guacamole)
 ### 2. [Mise en place d'un VPN site à site](#VPN_site2site)
-
-
+### 3. [Mise en place d'une connection RDS](#RDS)
+### 4. [Accès au Firewall partenaire](#Firewall)
 
 
 ### 1. Installation Guacamole (Serveur bastion)
