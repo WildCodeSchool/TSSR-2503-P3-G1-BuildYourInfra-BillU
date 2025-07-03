@@ -404,6 +404,8 @@ Pour le mode "super administrateur"
 
 ![image](Ressources/GLPI.png)
 
+<ins>Pré-requis</ins> Créer une **OU** dans l'Active Directory **Connecteurs** avec un utilisateur comme par exempme **Shynchro_GLPI** qui vous servira de lien avec votre Annnuaire LDAP. Ne pas le mettre avec des droits Administrateur
+
 ### 2.Liaison à l'Active Directoy
 
 - Aller dans Configuration et Authentification
