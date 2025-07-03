@@ -342,7 +342,7 @@ Dans **Configure automatic updates** :
 ### 1.Installation d'un serveur GLPI sur le serveur Debian
 
 **<ins>Pré requis:</ins>**
-- Un serveur: Ici, nous avons pris une Debian avec une adresse Ip 172.16.10.324
+- Un serveur: Ici, nous avons pris une Debian avec une adresse Ip 172.16.10.3/24
 - Un serveur AD: Ici, nous avons pris une Windows server avec une adresse IP 172.16.10.1/24
 
 **<ins>Commandes pour l'installation sur le serveur Debian:</ins>**
