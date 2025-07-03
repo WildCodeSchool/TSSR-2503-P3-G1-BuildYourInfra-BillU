@@ -342,25 +342,25 @@ Dans **Configure automatic updates** :
 ### 1.Installation d'un serveur GLPI sur le serveur Debian
 
 **<ins>Pré requis:</ins>**
-- Un serveur: Ici, nous avons pris une Debian avec une adresse Ip 172.16.10.3/24
+- Un serveur: Ici, nous avons pris un conteneur sous Debian avec une adresse Ip 172.16.10.12/24
 - Un serveur AD: Ici, nous avons pris une Windows server avec une adresse IP 172.16.10.1/24
 
 **<ins>Commandes pour l'installation sur le serveur Debian:</ins>**
 
 - Mises à jour du serveur `apt update && apt upgrade -y`
 - Installation Apache `apt install apache2 -y`
-- Activation d'Apache au démarrage de la machine `systemctl enable apache2`
+- Activation d'Apache maintenant et au démarrage de la machine `systemctl enable --now apache2`
 - Vérification du status d'Apache `systemctl status apache2` il doit être en vert "Running"
 - Installation de la BDD mariahdb `apt install mariadb-server -y`
 - PHP: Installation des dépendances `apt install ca-certificates apt-transport-https software-properties-common lsb-release curl lsb-release -y`
-- Ajout du dépôt pour PHP 8.1 `curl -sSL https://packages.sury.org/php/README.txt | bash -x`
+- Ajout du dépôt pour PHP 8.1 : `wget -qO /etc/apt/trusted.gpg.d/php.gpg https://packages.sury.org/php/apt.gpg`, puis `echo "deb https://packages.sury.org/php/ $(lsb_release -sc) main" | sudo tee /etc/apt/sources.list.d/php.list` et enfin `curl -sSL https://packages.sury.org/php/README.txt | bash -x`
 - Mise à jour `apt update`
 - Installation de PHP 8.1 `apt install php8.1 -y`
 - Installation des modules annexes `apt install php8.1 libapache2-mod-php -y` et `apt install php8.1-{ldap,imap,apcu,xmlrpc,curl,common,gd,mbstring,mysql,xml,intl,zip,bz2} -y`
 - Installation de Mariadb `mysql_secure_installation`
   > A la suite de cette commande, plusieurs questions vous seront posées comme **Mot de passe du compte root?** ou encore **changer le mot de passe du compte root?** A répondre selon ce que vos besoins.
 - Configuration de la base de données `mysql -u root -p`
-- Dans la configuration de Mariadb, nous avons mis
+- Dans la configuration de Mariadb, nous avons mis  
   > Nom de la BDD : glpidb
   - `create database glpidb character set utf8 collate utf8_bin;`
   > - Compte d accès à la BDD glpidb : glpi
@@ -368,22 +368,23 @@ Dans **Configure automatic updates** :
   - `grant all privileges on glpidb.* to glpi@localhost identified by "Azerty1*";`
   - `flush privileges;`
   - `quit`
-  -  Ressources de GLPI dans Github / Téléchargement des sources `wget https://github.com/glpi-project/glpi/releases/download/10.0.15/glpi-10.0.15.tgz`
+  -  Ressources de GLPI dans Github / Téléchargement des sources `wget https://github.com/glpi-project/glpi/releases/download/10.0.18/glpi-10.0.18.tgz`
   -  Création du dossier pour glpi `mkdir /var/www/html/glpi.billu.lan` (Mettre votre nom de domaine AD)
-  -  Décompression du contenu téléchargé `tar -xzvf glpi-10.0.15.tgz`
+  -  Décompression du contenu téléchargé `tar -xzvf glpi-10.0.18.tgz`
   -  Copie du dossier décompréssé vers le nouveau crée `cp -R glpi/* /var/www/html/glpi.billu.lan`
   -  Suppression du fichier index.php dans /var/www/html `rm /var/www/html/index.html`
-  -  Mettre les droits nécessaires aux fichiers `chown -R www-data:www-data /var/www/html/glpi.billu.lan` et `chmod -R 775 /var/www/html/glpi.billu.lan` (Mettre selon vos besoins)
+  -  Mettre les droits nécessaires aux fichiers `chown -R www-data:www-data /var/www/html/glpi.billu.lan` et `chmod -R 700 /var/www/html/glpi.billu.lan` (Mettre selon vos besoins)
+  -  La version php8.4 n'étant actuellement aps compatible avec apache2, nous allons désactiver cette version `a2dismod php8.4` et bien activer la version php8.1 `a2enmod php8.1` 
   -  Configuration de PHP / Editer du fichier /etc/php/8.1/apache2/php.ini `nano /etc/php/8.1/apache2/php.ini`
   > - Modification des paramètres -> memory_limit = 64M # <= à changer #vers ligne 435
-  > - Max_execution_time = 600 # <= à changer #vers ligne 410
+  > - Max_execution_time = 600 # <= à changer #vers ligne 409
   - Enregistrer et quitter
   - Redémarrer le serveur.
-  - - **Pour la liaison** -> Tapez les commandes `sudo apt-get update` et `sudo apt-get install php-ldap` **Obligatoire**
+  - - **Pour la liaison** -> Tapez les commandes `sudo apt-get update`  
 
 ### Sur la machine cliente Windows server
 
-Depuis le navigateur web: http://172.16.10.3/glpi.billu.lan/ (Mettre l'adresse de sons serveur GLPI)
+Depuis le navigateur web: http://172.16.10.12/glpi.billu.lan/ (Mettre l'adresse de sons serveur GLPI)
 
 Sur la page d'installation :
 - Langue : **Français**
@@ -404,9 +405,9 @@ Pour le mode "super administrateur"
 
 ![image](Ressources/GLPI.png)
 
-<ins>Pré-requis</ins> Créer une **OU** dans l'Active Directory **Connecteurs** avec un utilisateur comme par exempme **Shynchro_GLPI** qui vous servira de lien avec votre Annnuaire LDAP. Ne pas le mettre avec des droits Administrateur
-
 ### 2.Liaison à l'Active Directoy
+
+<ins>Pré-requis</ins> Créer une **OU** dans l'Active Directory nommée **Connecteurs** avec un utilisateur comme par exemple **Shynchro_GLPI** qui vous servira de lien avec votre Annnuaire LDAP. Ne pas le mettre avec des droits Administrateur.
 
 - Aller dans Configuration et Authentification
 
@@ -424,17 +425,20 @@ Pour le mode "super administrateur"
 
 ![image](Ressources/Annuaire_LDAP.png)
 
-- Remplir l'annuaire 
+- Remplir l'annuaire
+> - En haut de page on a "Active directory / OpenLDAP / Valeurs par défaut" -> Cliquer sur Active Directory et une ligne va apparaître dans le filtre de connexion.
 > - Nom : le nom de cet annuaire LDAP
 > - Serveur par défaut: oui
 > - Actif : oui
-> - Serveur : adresse IP du contrôleur de domaine à interroger: ici 172.16.10.3
+> - Serveur : adresse IP du contrôleur de domaine à interroger: ici 172.16.10.1
 > - Port : 389, qui est le port par défaut du protocole LDAP
-> - Filtre de connexion : requête LDAP pour rechercher les objets dans l'annuaire Active Directory: En haut de page on a "Active directory / OpenLDAP / Valeurs par défaut" -> Cliquer sur Active Directory et une ligne va apparaître dans le filtre de connexion.
+> - Filtre de connexion : requête LDAP pour rechercher les objets dans l'annuaire Active Directory
 - elle veut dire:
 > - 👉 Je veux tous les objets qui sont des utilisateurs
 > - 👉 Qui sont des personnes (et pas des ordinateurs)
 > - 👉 Et qui ne sont pas désactivé
+
+
 > - BaseDN : où faut-il se positionner dans l'annuaire pour rechercher les utilisateurs ? ici OU=Utlisateurs,OU=Billu,DC=billan,DC=lan
 > - Utiliser bind : à positionner sur "Oui" pour du LDAP classique (sans TLS)
 > - DN du compte : le nom du compte à utiliser pour se connecter à l'Active Directory: ici CN=Synchro_GLPI,OU=Connecteurs,DC=billu,DC=lan
@@ -446,7 +450,7 @@ A la fin, vous devez avoir quelque chose qui ressemble à ça
 
 ![image](Ressources/Annuaire_Rempli.png)
 
-> - Sauveegarder
+> - Ajouter ou Sauvegarder les changements si l'annuaire LDAP etait déjà créée
 
 ![image](Ressources/Sauvegarde.png)
 
@@ -455,6 +459,24 @@ Vous pouvez tester la connection en cliquant sur le nom de votre serveur
 ![image](Ressources/Test.png)
 
 Voilà, votre serveur Active Directory et lié à votre Annuaire LDAP !
+
+Pour importer les utilisateurs, aller dans **Administration**, **Utilisateurs** puis **Liaison annuaire LDAP**.  
+![liaisonLDAP](Ressources/glpi-liaisonLDAP.png)
+
+
+**Importation de nouveaux utilisateurs** puis **Rechercher** pour ne pas appliquer de filtre et ainsi afficher tous les utilisateurs.  
+Sélectionner tous les utilisateurs puis **Actions**  
+![import](Ressources/glpi-ImportUsers.png)  
+
+Choisir **Importer** et Envoyer
+
+De retour dans **Administration**, **Utilisateurs**, on peut vérifier l'import des utilisateurs.  
+![importOK](Ressources/glpi-importOK.png)  
+
+Pour mettre en place la synchronisation des utilisateurs, retourner dans **Administration**, **Utilisateurs** puis **Liaison annuaire LDAP**.  
+Choisir **Synchronisation des utilisateurs déjà importés** puis **Rechercher** pour ne pas appliquer de filtre et ainsi afficher tous les utilisateurs.  
+Sélectionner tous les utilisateurs puis **Actions**. Choisir **Synchroniser** et Envoyer.  
+
 
 
 
