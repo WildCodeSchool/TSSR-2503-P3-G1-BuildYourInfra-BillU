@@ -3,8 +3,6 @@ Partenariat : 2 objectifs de groupe à choisir. 1 Principal et 1 Secondaire. 3 o
 ### 1. [Installation Guacamole (Serveur bastion)](#guacamole)
 ### 2. [Mise en place d'un VPN site à site](#VPN_site2site)
 ### 3. [Mise en place d'une connection RDS](#RDS)
-### 4. [Accès au Firewall partenaire](#Firewall)
-
 
 ### 1. Installation Guacamole (Serveur bastion)
 <span id="guacamole"></span>
@@ -238,3 +236,8 @@ Activer P1 et P2 créés
 
 Connexion établie
 ![réussie](Ressources/Connexion_Reussie.png)
+
+### 3. Mise en place d'une connexion RDS
+<span id="RDS"></span>
+
+Le rôle RDS a déjà été installé lors du sprint 7, pour la mise en place d'un PC d'Administration.
