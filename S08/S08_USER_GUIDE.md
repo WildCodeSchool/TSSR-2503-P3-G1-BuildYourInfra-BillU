@@ -28,3 +28,7 @@ La barre bleue en haut permet de contrôler la fenêtre comme pour de réduire l
 <span id="Firewall"></span>
 
 L'accès au Firewall de l'entreprise partenaire EcoTechSolutions se fait en accédant à l'adresse IP de leur Firewall depuis un navigateur. L'adresse est _172.16.20.254_.
+
+La connexion au compte pfSense se fait avec les identifiants suivants :
+* **Nom de compte** : admin
+* **Mot de passe** : Azerty1*
