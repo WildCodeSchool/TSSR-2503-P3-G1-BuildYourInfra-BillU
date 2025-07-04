@@ -1,6 +1,7 @@
 
 
 ### 1. [Connexion RDS](#RDS)
+### 2. [Accès au Firewall partenaire](#Firewall)
 
 
 ### 1. Connexion RDS
@@ -21,3 +22,9 @@ Cocher **Don't ask me again for connections on this computer** et **Yes** pour c
 La connexion est établie et le contrôle grap^hique opérationnel.  
 La barre bleue en haut permet de contrôler la fenêtre comme pour de réduire la fenêtre ou bien de stopper la connexion via la croix.  
 ![RDS-ok](Ressources/RDS-ok.png)
+
+
+### 2. Accès au Firewall partenaire
+<span id="Firewall"></span>
+
+L'accès au Firewall de l'entreprise partenaire EcoTechSolutions se fait en accédant à l'adresse IP de leur Firewall depuis un navigateur. L'adresse est _172.16.20.254_.
