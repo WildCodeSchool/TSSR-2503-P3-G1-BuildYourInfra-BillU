@@ -95,10 +95,10 @@ La collaboration avec des prestataires extérieurs, intégrés selon les besoins
 
 | Membre         | Rôle          | Missions                                                                   |
 | -------------- | ------------- | -------------------------------------------------------------------------- |
-| Bertrand       | Technicien    |                                                                            |
-| Brendan        | Technicien    |                                                                            |
-| Killian        | Product Owner |                                                                            |
-| Tatiana        | Scrum Master  |                                                                            |
+| Bertrand       | Technicien    | Guacamole, RDP, dossiers partagés, pfSense                                 |
+| Brendan        | Technicien    | Guacamole, RDP, dossiers partagés, pfSense                                 |
+| Killian        | Product Owner | Guacamole, RDP, dossiers partagés, pfSense                                 |
+| Tatiana        | Scrum Master  | Guacamole, RDP, dossiers partagés, pfSense                                 |
 
 ### Sprint 9
 
