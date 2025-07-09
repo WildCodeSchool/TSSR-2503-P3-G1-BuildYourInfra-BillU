@@ -10,6 +10,14 @@ Les résultats d'audit OpenScap sont contenus dans les fichiers `report_LINSRV0X
 
 ### Lynis
 
-* LINSRV02 : 1 Warning, 53 suggestions
-* LINSRV03 : 0 Warning, 44 suggestions
-* LINSRV04 : 0 Warning, 54 suggestions
+* **LINSRV02 (mail)** : 1 Warning, 53 suggestions
+
+![Audit Lynis serveur mail](Ressources/lynis_linsrv02.png)
+
+* **LINSRV03 (Zabbix) **: 0 Warning, 44 suggestions
+
+![Audit Lynis serveur Zabbix](Ressources/lynis_linsrv03.png)
+
+* **LINSRV04 (FreePBX)**: 0 Warning, 54 suggestions
+
+![Audit Lynis serveur FreePBX](Ressources/lynis_linsrv04.png)
