@@ -10,3 +10,5 @@ Trouver le nom du profil avec `oscap info ssg-OS-ds.xml`
 * LINSRV03 -> ok
 * LINSRV02 -> ok
 * LINSRV04 -> ok
+
+Les fichiers HTML de report sont dans le dossier AUDIT sur le Dossier Personnel de la LINSRV03 :) 
