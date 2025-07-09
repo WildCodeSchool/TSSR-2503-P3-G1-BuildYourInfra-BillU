@@ -32,4 +32,5 @@ Les résultats d'audit OpenScap sont contenus dans les fichiers `report_LINSRV0X
 
 ### Lynis
 
+* **LINSRV04 (Bastion)** : 0 Warning, 53 suggestions
 
