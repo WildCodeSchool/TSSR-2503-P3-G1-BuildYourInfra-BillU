@@ -8,5 +8,5 @@ Trouver le nom du profil avec `oscap info ssg-OS-ds.xml`
 
 
 * LINSRV03 -> ok
-* LINSRV02 -> TODO
+* LINSRV02 -> ok
 * LINSRV04 -> ok
