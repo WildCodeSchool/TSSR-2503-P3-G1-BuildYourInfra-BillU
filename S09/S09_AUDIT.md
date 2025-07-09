@@ -2,7 +2,7 @@
 
 ## 🪟 Résultats audit AD
 
-## 🐧 Résultats audit serveurs Linux
+## 🐧 Résultats audit serveurs Linux pré-fix
 
 ### OpenScap
 
@@ -14,10 +14,16 @@ Les résultats d'audit OpenScap sont contenus dans les fichiers `report_LINSRV0X
 
 ![Audit Lynis serveur mail](Ressources/lynis_linsrv02.png)
 
-* **LINSRV03 (Zabbix) **: 0 Warning, 44 suggestions
+* **LINSRV03 (Zabbix)** : 0 Warning, 44 suggestions
 
 ![Audit Lynis serveur Zabbix](Ressources/lynis_linsrv03.png)
 
-* **LINSRV04 (FreePBX)**: 0 Warning, 54 suggestions
+* **LINSRV04 (FreePBX)** : 0 Warning, 54 suggestions
 
 ![Audit Lynis serveur FreePBX](Ressources/lynis_linsrv04.png)
+
+## 🐧 Résultats audit serveurs Linux post-fix
+
+### OpenScap
+
+### Lynis
