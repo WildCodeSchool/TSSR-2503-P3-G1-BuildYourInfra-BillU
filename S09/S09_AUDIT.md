@@ -18,7 +18,7 @@ Les résultats d'audit OpenScap sont contenus dans les fichiers `report_LINSRV0X
 
 ![Audit Lynis serveur Zabbix](Ressources/lynis_linsrv03.png)
 
-* **LINSRV04 (FreePBX)** : 0 Warning, 54 suggestions
+* **LINSRV04 (Bastion)** : 0 Warning, 54 suggestions
 
 ![Audit Lynis serveur FreePBX](Ressources/lynis_linsrv04.png)
 
@@ -31,3 +31,5 @@ Afin d'améliorer la sécurité de notre infrastructure, nous avons suivi certai
 Les résultats d'audit OpenScap sont contenus dans les fichiers `report_LINSRV0X_post.html` du dossier **Ressources**. Il est possible de les télécharger puis de les ouvrir avec un navigateur afin de consulter l'audit dans son intégralité.
 
 ### Lynis
+
+
