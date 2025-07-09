@@ -16,7 +16,7 @@ Peu importe l'OS, les résultats seront dans un fichier HTML consultable avec na
 
 ### Ubuntu
 
-oscap xccdf eval --profile xccdf_org.ssgproject.content_profile_cis_level1_workstation --results-arf results.xml --report report.html ssg-ubuntu-ds.xml
+```oscap xccdf eval --profile xccdf_org.ssgproject.content_profile_cis_level1_workstation --results-arf results.xml --report report.html ssg-ubuntu-ds.xml```
 
 ### Lynis
 
