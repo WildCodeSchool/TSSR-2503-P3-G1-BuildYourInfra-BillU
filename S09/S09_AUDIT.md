@@ -34,9 +34,4 @@ Les résultats d'audit OpenScap sont contenus dans les fichiers `report_LINSRV0X
 
 Le but principal pour Lynis est de nous débarasser sur Warning qui a été trouvé sur le serveur de mail. Certaines autres tâches ont été réalisées et ont pu également réduire le nombre de suggestions.
 
-* **LINSRV02 (mail)** : 1 Warning, 53 suggestions
-
-* **LINSRV03 (Zabbix)** : 0 Warning, 44 suggestions
-
-* **LINSRV04 (Bastion)** : 0 Warning, 53 suggestions
-
+Il s'agissait pour cela de s'assurer qu'il n'y avait pas d'informations dans le paramètre `smtpd_banner` de la configuration Postfix de notre serveur mail.
