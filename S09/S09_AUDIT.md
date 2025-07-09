@@ -32,5 +32,11 @@ Les résultats d'audit OpenScap sont contenus dans les fichiers `report_LINSRV0X
 
 ### Lynis
 
+Le but principal pour Lynis est de nous débarasser sur Warning qui a été trouvé sur le serveur de mail. Certaines autres tâches ont été réalisées et ont pu également réduire le nombre de suggestions.
+
+* **LINSRV02 (mail)** : 1 Warning, 53 suggestions
+
+* **LINSRV03 (Zabbix)** : 0 Warning, 44 suggestions
+
 * **LINSRV04 (Bastion)** : 0 Warning, 53 suggestions
 
