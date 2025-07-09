@@ -7,6 +7,6 @@ Avec NOM_DU_PROFIL et OS différents à chaque fois
 Trouver le nom du profil avec `oscap info ssg-OS-ds.xml`
 
 
-LINSRV03 -> ok
-LINSRV02 -> TODO
-LINSRV04 -> TODO
+* LINSRV03 -> ok
+* LINSRV02 -> TODO
+* LINSRV04 -> TODO
