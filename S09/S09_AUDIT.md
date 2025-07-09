@@ -24,6 +24,10 @@ Les résultats d'audit OpenScap sont contenus dans les fichiers `report_LINSRV0X
 
 ## 🐧 Résultats audit serveurs Linux post-fix
 
+Afin d'amélioration la sécurité de notre infrastructure, nous avons suivi certaines recommandations de nos rapports d'audit. Pour nous assurer que notre infrastructure progresse bien vers plus de sécurité, nous avons ensuite réévalué l'infrastructure avec les mêmes outils.
+
 ### OpenScap
+
+Les résultats d'audit OpenScap sont contenus dans les fichiers `report_LINSRV0X_post.html` du dossier **Ressources**. Il est possible de les télécharger puis de les ouvrir avec un navigateur afin de consulter l'audit dans son intégralité.
 
 ### Lynis
