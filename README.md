@@ -104,10 +104,10 @@ La collaboration avec des prestataires extérieurs, intégrés selon les besoins
 
 | Membre         | Rôle          | Missions                                                                   |
 | -------------- | ------------- | -------------------------------------------------------------------------- |
-| Bertrand       | Product Owner |                                                                            |
-| Brendan        | Scrum Master  |                                                                            |
-| Killian        | Technicien    |                                                                            |
-| Tatiana        | Technicienne  |                                                                            |
+| Bertrand       | Product Owner | Audit Lynis & OpenScap                                                     |
+| Brendan        | Scrum Master  | Audit Lynis & OpenScap                                                     |
+| Killian        | Technicien    | Audit AD                                                                   |
+| Tatiana        | Technicienne  | Présentation                                                               |
 
 ### Sprint 10
 
