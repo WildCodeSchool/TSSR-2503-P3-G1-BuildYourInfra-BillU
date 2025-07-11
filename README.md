@@ -1,5 +1,3 @@
-# SPRINT 09 ZABBIX ET DNS
-
 # 💸 BillU
 
 ![Logo de BillU](S01/Ressources/change_le_fond_en_pl.png)
