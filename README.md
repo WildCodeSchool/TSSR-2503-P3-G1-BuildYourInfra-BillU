@@ -172,7 +172,15 @@ Nous avons d'abord voulu faire nos sauvegardes à l'aide de Bareos, ce qui a ét
 
 ### Sprint 7
 
-WSUS.
+L'installation et la configuration de WSUS ont été complexes et chronophages.
+
+### Sprint 8
+
+Rien à signaler.
+
+### Sprint 9
+
+L'utilisation de HardenSysvol n'est pas fonctionnelle.
 
 ## 💡 Solutions trouvées
 
@@ -195,7 +203,5 @@ Nous avons suivi un [tutoriel](https://support.microsoft.com/en-us/topic/error-m
 ### Sprint 5
 
 Nous avons finalement décidé de mettre en place nos sauvegardes à l'aide de Wiondows Server Backup.
-
-### Sprint 7
 
 ## 🚀 Améliorations possibles
