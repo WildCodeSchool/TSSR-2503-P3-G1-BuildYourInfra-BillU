@@ -102,10 +102,10 @@ La collaboration avec des prestataires extérieurs, intégrés selon les besoins
 
 | Membre         | Rôle          | Missions                                                                   |
 | -------------- | ------------- | -------------------------------------------------------------------------- |
-| Bertrand       | Product Owner | Audit Lynis & OpenScap                                                     |
+| Bertrand       | Product Owner | Zabbix, Audit Lynis                                                        |
 | Brendan        | Scrum Master  | Audit Lynis & OpenScap                                                     |
 | Killian        | Technicien    | Audit AD                                                                   |
-| Tatiana        | Technicienne  | Présentation                                                               |
+| Tatiana        | Technicienne  | Zabbix, Présentation                                                       |
 
 ### Sprint 10
 
