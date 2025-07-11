@@ -170,6 +170,10 @@ Le sprint était également un peu court.
 
 Nous avons d'abord voulu faire nos sauvegardes à l'aide de Bareos, ce qui a été complexe et nous a ralentis. L'installation de Zabbix a été relativement complexe, surtout à cause de la configuration de la base de données en MySQL.
 
+### Sprint 6
+
+Rien à signaler.
+
 ### Sprint 7
 
 L'installation et la configuration de WSUS ont été complexes et chronophages.
