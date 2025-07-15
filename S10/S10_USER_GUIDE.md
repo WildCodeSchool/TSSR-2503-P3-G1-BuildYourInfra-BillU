@@ -4,7 +4,7 @@ Kali Linux et ParrotOS embarquent de nombreux outils utiles pour les pentesters 
 
 Certains de ces outils sont utiles pour attaquer une infrastructure, d'autres pour la défendre.
 
-## ⚔️ Attaque
+## ⚔️ Attaque - Kali
 
 ### 📍 Utilisation de nmap
 
@@ -90,4 +90,4 @@ Similairement à medusa, on peut utiliser un fichier contenant plusieurs mots de
 hydra -l root -P motsdepasses.txt ssh://172.20.10.4
 ```
 
-## 🛡️ Défense
+## 🛡️ Défense - ParrotOS
