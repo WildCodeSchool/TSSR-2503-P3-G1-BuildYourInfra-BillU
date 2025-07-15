@@ -10,4 +10,8 @@ Ensuite, nous créons une VM avec à partir de cette image.
 
 Afin de tester notre réseau, nous ajoutons la carte vmbr100 à cette machine, afin qu'elle soit sur notre réseau LAN.
 
+Au boot de la machine, nous choisissons une installation graphique :
+
+![Installation graphique Kali](Ressources/installer_kali_graphique.png)
+
 ## 🦜 Installation de ParrotOS
