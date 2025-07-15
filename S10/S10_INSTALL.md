@@ -14,4 +14,6 @@ Au boot de la machine, nous choisissons une installation graphique :
 
 ![Installation graphique Kali](Ressources/installer_kali_graphique.png)
 
+Nous suivons ensuite les instructions pour installer une machine Kali en **Français**, en conservant toutes les options par défaut, y compris le **bureau xfce**.
+
 ## 🦜 Installation de ParrotOS
