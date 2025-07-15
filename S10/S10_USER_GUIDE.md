@@ -6,6 +6,8 @@ Certains de ces outils sont utiles pour attaquer une infrastructure, d'autres po
 
 ## ⚔️ Attaque - Kali
 
+Les outils suivants sont installés d'office sur Kali. Dans le cas contraire, le procédé d'installation est détaillé dans [le fichier d'installation](S10_INSTALL.md) de ce sprint.
+
 ### 📍 Utilisation de nmap
 
 **nmap** a pour objectif de scanner les ports des hôtes ou réseaux cibles. Il permet de détecter quels ports sont ouverts et donc quels ports il est possible de cibler lors d'une attaque.
