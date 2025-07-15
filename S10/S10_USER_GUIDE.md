@@ -72,8 +72,14 @@ Les paramètres sont les suivants :
 * **-p Azerty1*** : tente d'entrer le mot de passe Azerty1*
 * **ssh://172.20.10.4** : cible l'hôte 172.20.10.4 avec le protocole ssh
 
+Le résultat obtenu sur hydra se présente ainsi :
+
+![Résultats hydra](Ressources/hydra_result.png)
+
 Similairement à medusa, on peut utiliser un fichier contenant plusieurs mots de passe. La commande devient alors :
 
 ```bash
 hydra -l root -P motsdepasses.txt ssh://172.20.10.4
 ```
+
+
