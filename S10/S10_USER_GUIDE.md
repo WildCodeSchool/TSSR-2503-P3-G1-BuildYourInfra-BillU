@@ -43,6 +43,10 @@ Les paramètres sont les suivants :
 
 Ceci tentera de se connecter en ssh à la machine ciblée, avec le mot de passe **Azerty1***.
 
+Le résultat obtenu avec medusa se présente ainsi :
+
+![Résultats medusa](Ressources/medusa_result.png)
+
 L'intérêt de Medusa est de fournir, à la place du mot de passe unique _Azerty1*_, un fichier contenant un ensemble de (très) nombreux mots de passe. Medusa effectuera alors des tests à la chaîne (et parallélisés) pour trouver si certains des mots de passe fournis fonctionnent. 
 
 Il faut alors remplacer l'argument **-p** par **-P** et lui passer le chemin vers le fichier contenant les mots de passe. 
@@ -72,7 +76,7 @@ Les paramètres sont les suivants :
 * **-p Azerty1*** : tente d'entrer le mot de passe Azerty1*
 * **ssh://172.20.10.4** : cible l'hôte 172.20.10.4 avec le protocole ssh
 
-Le résultat obtenu sur hydra se présente ainsi :
+Le résultat obtenu avec hydra se présente ainsi :
 
 ![Résultats hydra](Ressources/hydra_result.png)
 
