@@ -4,7 +4,6 @@ Kali Linux et ParrotOS embarquent de nombreux outils utiles pour les pentesters 
 
 Certains de ces outils sont utiles pour attaquer une infrastructure, d'autres pour la défendre.
 
-
 ## ⚔️ Attaque
 
 ### 📍 Utilisation de nmap
