@@ -1,5 +1,7 @@
 # 🖥️ Guide d'utilisation Sprint 10
 
+Kali Linux et ParrotOS embarquent de nombreux outils utiles pour les pentesters (ou les pirates). Il n'est donc pas nécessaire d'installer de nombreux outils une fois une version de Kali déployée dans notre infrastructure.
+
 ## 📍 Utilisation de nmap
 
 nmap a pour objectif de scanner les ports des hôtes ou réseaux cibles. Il permet de détecter quels ports sont ouverts et donc quels ports il est possible de cibler lors d'une attaque.
