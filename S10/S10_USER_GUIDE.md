@@ -2,7 +2,12 @@
 
 Kali Linux et ParrotOS embarquent de nombreux outils utiles pour les pentesters (ou les pirates). Il n'est donc pas nécessaire d'installer de nombreux outils une fois une version de Kali déployée dans notre infrastructure.
 
-## 📍 Utilisation de nmap
+Certains de ces outils sont utiles pour attaquer une infrastructure, d'autres pour la défendre.
+
+
+## ⚔️ Attaque
+
+### 📍 Utilisation de nmap
 
 **nmap** a pour objectif de scanner les ports des hôtes ou réseaux cibles. Il permet de détecter quels ports sont ouverts et donc quels ports il est possible de cibler lors d'une attaque.
 
@@ -23,7 +28,7 @@ Ce scan global du réseau permet de trouver tous les ordinateurs qui auraient de
 
 La totalité des options possibles pour nmap peut être trouvée sur la [documentation officielle](https://nmap.org/man/fr/index.html).
 
-## 👾 Utilisation de medusa
+### 👾 Utilisation de medusa
 
 **medusa** est un utilitaire permettant de tenter de [bruteforce](https://fr.wikipedia.org/wiki/Attaque_par_force_brute) des identifiants.
 
@@ -59,7 +64,7 @@ Un exemple de commande possible serait alors :
 medusa -h 172.20.10.4 -u root -P motsdepasse.txt -M ssh -t 1
 ```
 
-## 🐍 Utilisation de hydra
+### 🐍 Utilisation de hydra
 
 Hydra propose des services similaires à ceux de medusa. 
 
@@ -86,4 +91,4 @@ Similairement à medusa, on peut utiliser un fichier contenant plusieurs mots de
 hydra -l root -P motsdepasses.txt ssh://172.20.10.4
 ```
 
-
+## 🛡️ Défense
