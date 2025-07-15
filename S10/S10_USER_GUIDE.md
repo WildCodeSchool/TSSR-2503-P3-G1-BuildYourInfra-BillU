@@ -21,4 +21,6 @@ Les paramètres sont les suivants :
 
 Ce scan global du réseau permet de trouver tous les ordinateurs qui auraient des ports ouverts intéressants pour le pirate, mais également les noms de OS, du domaine...
 
+La totalité des options possibles pour nmap peut être trouvée sur la [documentation officielle](https://nmap.org/man/fr/index.html).
+
 ## 👾 Utilisation de medusa
