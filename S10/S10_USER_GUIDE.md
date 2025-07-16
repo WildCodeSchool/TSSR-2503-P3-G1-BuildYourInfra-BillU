@@ -98,8 +98,18 @@ hydra -l root -P motsdepasses.txt ssh://172.20.10.4
 
 ### 💥 Défense contre la force brute
 
-#### 🔑 Sécurisation du mot de passe
+#### 🔑 Sécurisation de l'authentification
+
+* Politique de mot de passe
+  * 12 caractères combinant majuscules, minuscules, numéros et caractères spéciaux   
+* Authentification multifacteur
+* Stockage de mots de passe sécurisé
 
 #### 🔌 Sécurisation des ports
 
+* Limiter le nombre de tentatives de connexion
+* Modifier le port par défaut (ssh 22 par exemple)
+
 #### 🕵🏼 Surveillance du réseau
+
+* Suricata / Wazuh
