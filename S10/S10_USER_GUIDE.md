@@ -100,16 +100,20 @@ hydra -l root -P motsdepasses.txt ssh://172.20.10.4
 
 #### 🔑 Sécurisation de l'authentification
 
-* Politique de mot de passe
-  * 12 caractères combinant majuscules, minuscules, numéros et caractères spéciaux   
-* Authentification multifacteur
-* Stockage de mots de passe sécurisé
+Pour se défendre contre une attaque force brute, il est intéressant de sécuriser les moyens d'authentification.
+
+Pour cela, il est possible d'implémenter une politique de mot de passe stricte, imposant un mot de passe long (12 caractères et plus), combinant majuscules et minuscles ainsi que des numéros et caractères spéciaux.
+
+De plus, un authentification multifacteur est possible (mot de passe plus clé dans le cas du ssh par exemple).
+
+Enfin, il faut s'assurer que les mots de passe sont stockés de manière sécurisées par les utilisateurs.
 
 #### 🔌 Sécurisation des ports
 
-* Limiter le nombre de tentatives de connexion
-* Modifier le port par défaut (ssh 22 par exemple)
+Au delà de l'authentification, il est également possible de sécuriser ses ports.
+
+Des pistes de défense peuvent être la limitation du nombre de tentatives de connexions, ou encore le changement des ports par défaut (particulièrement sensible dans le cas du ssh).
 
 #### 🕵🏼 Surveillance du réseau
 
-* Suricata / Wazuh
+Enfin, il est possible de mettre en place des outils de surveillance du réseau (cf. partie Wazuh/Suricata) afin de pouvoir réagir en cas d'activité suspecte.
