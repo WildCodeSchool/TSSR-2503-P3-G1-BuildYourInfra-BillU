@@ -6,9 +6,11 @@ Certains de ces outils sont utiles pour attaquer une infrastructure, d'autres po
 
 ## ⚔️ Attaque - Kali
 
-Les outils suivants sont installés d'office sur Kali. Dans le cas contraire, le procédé d'installation est détaillé dans [le fichier d'installation](S10_INSTALL.md) de ce sprint.
+Les outils utilisés dans la suite sont installés d'office sur Kali. Dans le cas contraire, le procédé d'installation est détaillé dans [le fichier d'installation](S10_INSTALL.md) de ce sprint.
 
-### 📍 Utilisation de nmap
+## 💥 Attaque par force brute
+
+#### 📍 Reconnaissance avec nmap
 
 **nmap** a pour objectif de scanner les ports des hôtes ou réseaux cibles. Il permet de détecter quels ports sont ouverts et donc quels ports il est possible de cibler lors d'une attaque.
 
@@ -29,7 +31,7 @@ Ce scan global du réseau permet de trouver tous les ordinateurs qui auraient de
 
 La totalité des options possibles pour nmap peut être trouvée sur la [documentation officielle](https://nmap.org/man/fr/index.html).
 
-### 👾 Utilisation de medusa
+#### 👾 Attaque par force brute avece medusa
 
 **medusa** est un utilitaire permettant de tenter de [bruteforce](https://fr.wikipedia.org/wiki/Attaque_par_force_brute) des identifiants.
 
@@ -65,7 +67,7 @@ Un exemple de commande possible serait alors :
 medusa -h 172.20.10.4 -u root -P motsdepasse.txt -M ssh -t 1
 ```
 
-### 🐍 Utilisation de hydra
+#### 🐍 Attaque par force brute avec hydra
 
 Hydra propose des services similaires à ceux de medusa. 
 
