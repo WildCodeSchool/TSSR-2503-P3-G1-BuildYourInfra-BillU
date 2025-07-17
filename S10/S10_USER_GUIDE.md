@@ -8,7 +8,7 @@ Certains de ces outils sont utiles pour attaquer une infrastructure, d'autres po
 
 Les outils utilisés dans la suite sont installés d'office sur Kali. Dans le cas contraire, le procédé d'installation est détaillé dans [le fichier d'installation](S10_INSTALL.md) de ce sprint.
 
-### 💥 Attaque par force brute
+### 💥 Attaque par force brute - Exploration des outils
 
 #### 📍 Reconnaissance avec nmap
 
