@@ -136,7 +136,7 @@ Pour se défendre contre une attaque force brute, il est intéressant de sécuri
 
 Pour cela, il est possible d'implémenter une politique de mot de passe stricte, imposant un mot de passe long (12 caractères et plus), combinant majuscules et minuscles ainsi que des numéros et caractères spéciaux.
 
-De plus, un authentification multifacteur est possible (mot de passe plus clé dans le cas du ssh par exemple).
+De plus, une authentification multifacteur est possible (mot de passe plus clé dans le cas du ssh par exemple).
 
 Enfin, il faut s'assurer que les mots de passe sont stockés de manière sécurisées par les utilisateurs.
 
