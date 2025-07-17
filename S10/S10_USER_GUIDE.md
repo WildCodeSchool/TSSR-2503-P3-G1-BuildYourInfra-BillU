@@ -94,9 +94,37 @@ Similairement à medusa, on peut utiliser un fichier contenant plusieurs mots de
 hydra -l root -P motsdepasses.txt ssh://172.20.10.4
 ```
 
-#### 📜 Script
+### 📜 Attaque force brute - Script
 
+Afin de tester une attaque plus complète et solide, nous avons créé un script d'attaque par force brute, nommé **attack.py**.
 
+Le script  est codé en **python** et est situé dans le sous-dossier **Scripts** de ce sprint. 
+
+#### Principe du script
+
+Ce script a pour objectif de réaliser une attaque par force brute sur les ports **ssh** de ses cibles.
+
+Pour cela, il commence par lancer un scan **nmap** sur le réseau sélectionné. Il renvoie toutes les machines sur lesquelles il a trouvé que le port 22 est ouvert.
+
+Ensuite, il lance une attaque par force brute sur chacune des machines ainsi trouvées à l'aide de **hydra**. Pour la prospection des mots de passe, nous utilisons le classique **rockyou.txt**.
+
+#### Exécution du script
+
+Il est possible de passer les arguments optionnels suivants au script :
+
+* **--ip** : adresse ip (réseau ou machine spécifique) à scanner. _172.16.10.0/24_ par défaut.
+* **--user** : utilisateur ciblé par l'attaque. _root_ par défaut.
+* **--passwords** : fichier de mots de passe pour l'attaque. _rockyou.txt_ par défaut.
+
+Par exemple, il est possible de lancer ce script en lançant la commande suivante :
+
+```bash
+python3 attack.py --ip 172.16.10.0/24 --user wilder --passwords rockyou.txt
+```
+
+Ainsi, nmap scannera le réseau **172.16.10.0/24**, puis tentera une attaque force brute par ssh sur l'utilisateur **wilder**, avec le fichier de mots de passe **rockyou.txt**
+
+> Le fichier rockyou.txt contient énormément de mots de passe. Pour tester le script sans y passer des heures (~50h par attaque estimée sur notre machine Kali), nous mettons à dispositon un fichier rockyou_lesser.txt, contenant beaucoup moins de mots de passe, mais surtout le très célèbre Azerty1*. 
 
 ## 🛡️ Défense - Ubuntu
 
