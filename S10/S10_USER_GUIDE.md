@@ -94,6 +94,10 @@ Similairement à medusa, on peut utiliser un fichier contenant plusieurs mots de
 hydra -l root -P motsdepasses.txt ssh://172.20.10.4
 ```
 
+#### 📜 Script
+
+
+
 ## 🛡️ Défense - Ubuntu
 
 ### 💥 Défense contre la force brute
