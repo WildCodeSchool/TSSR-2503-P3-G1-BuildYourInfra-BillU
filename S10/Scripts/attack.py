@@ -1,8 +1,5 @@
 #!/usr/bin/env python3
 
-# TODO :
-# Documentation
-
 # Importations de librairies
 import argparse
 import subprocess
