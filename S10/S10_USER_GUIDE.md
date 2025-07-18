@@ -148,4 +148,8 @@ Des pistes de défense peuvent être la limitation du nombre de tentatives de co
 
 #### 🕵🏼 Surveillance du réseau
 
-Enfin, il est possible de mettre en place des outils de surveillance du réseau (cf. partie Wazuh/Suricata) afin de pouvoir réagir en cas d'activité suspecte.
+Enfin, il est possible de mettre en place des outils de surveillance du réseau (cf Suricata) afin de pouvoir réagir en cas d'activité suspecte.
+
+#### 🦦 Suricata 
+
+Pour visualiser les logs en direct  : ` tail -f /var/log/suricata/fast.log`
