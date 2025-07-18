@@ -111,10 +111,10 @@ La collaboration avec des prestataires extérieurs, intégrés selon les besoins
 
 | Membre         | Rôle          | Missions                                                                   |
 | -------------- | ------------- | -------------------------------------------------------------------------- |
-| Bertrand       | Technicien |   |
-| Brendan        | Technicien |   |
-| Killian        | Scrum Master |   |
-| Tatiana        | Product Owner |   |
+| Bertrand       | Technicien    | Suricata                                                                   |
+| Brendan        | Technicien    | Force brute                                                                |
+| Killian        | Scrum Master  | Metasploit                                                                 |
+| Tatiana        | Product Owner | Présentation                                                               |
 
 ### Sprint 11
 
