@@ -96,6 +96,10 @@ Ubuntu 24.04
 
             tail -f /var/log/suricata/eve.json | jq .
 
+- Activer le routage IP sur la VM
+
+            `sysctl -w net.ipv4.ip_forward=1`
+
 
 Installation terminée
 
