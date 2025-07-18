@@ -204,3 +204,7 @@ Nous avons suivi un [tutoriel](https://support.microsoft.com/en-us/topic/error-m
 Nous avons finalement décidé de mettre en place nos sauvegardes à l'aide de Wiondows Server Backup.
 
 ## 🚀 Améliorations possibles
+
+### Redondance des serveurs
+
+En l'état, pour des raisons de ressources et de temps, il n'y a pas de redondance de nos machines. Cela fait partie de nos pistes d'amélioration possibles afin d'améliorer notre infrastructure.
