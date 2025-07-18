@@ -134,15 +134,6 @@ La collaboration avec des prestataires extérieurs, intégrés selon les besoins
 | Killian        |  |   |
 | Tatiana        |  |   |
 
-### Sprint 13
-
-| Membre         | Rôle          | Missions                                                                   |
-| -------------- | ------------- | -------------------------------------------------------------------------- |
-| Bertrand       |  |   |
-| Brendan        |  |   |
-| Killian        |  |   |
-| Tatiana        |  |   |
-
 ## ⚙️ Choix techniques
 
 **TODO: **
@@ -185,6 +176,10 @@ Rien à signaler.
 ### Sprint 9
 
 L'utilisation de HardenSysvol n'est pas fonctionnelle.
+
+### Sprint 10
+
+Il y a beaucoup de possibilités en pentesting, choisir quoi faire et trouver comment le faire peut s'avérer difficile.
 
 ## 💡 Solutions trouvées
 
