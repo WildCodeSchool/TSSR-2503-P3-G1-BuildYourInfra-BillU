@@ -195,7 +195,7 @@ DNS -->  172.20.10.1 ou 8.8.8.8
 
         sudo apt install apache2
 
-        enable apache2
+        systemctl enable apache2
 
 Vérifier le status :
 
