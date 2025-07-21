@@ -129,10 +129,10 @@ La collaboration avec des prestataires extérieurs, intégrés selon les besoins
 
 | Membre         | Rôle          | Missions                                                                   |
 | -------------- | ------------- | -------------------------------------------------------------------------- |
-| Bertrand       |  |   |
-| Brendan        |  |   |
-| Killian        |  |   |
-| Tatiana        |  |   |
+| Bertrand       | Scrum Master  |     |
+| Brendan        | Product Owner |     |
+| Killian        | Technicien    |     |
+| Tatiana        | Technicien    |     |
 
 ## ⚙️ Choix techniques
 
