@@ -28,9 +28,19 @@ Ensuite, nous pouvons distribuer à nouveau les rôles que nous l'avons décrit 
 
 ### Restauration du serveur Windows Server Core 2022 - WINSRVCORE02
 
-### Restauration du serveur Windows Server 2022 - WINGUI02
+Seule la mémoire RAM de cette machine a été atteinte par la panne électrique. Nous l'avons donc remplacée avec 2 Go de RAM.
+
+### Restauration du serveur Windows Server 2022 - WINSRVGUI02
+
+Seule la carte réseau de cette machine a été atteinte par la panne électrique. Nous l'avons donc remplacée.
 
 ### Restauration du client Windows Pro - WINCLI01
+
+La machine WINSRVCORE01 a été totalement détruite par la panne électrique. Il faut donc la recréer. 
+
+Pour cela, nous clonons sur Proxmox le template de machine Windows 10 Pro. 
+
+Après avoir vérifié que le DHCP lui a bien attribué une adresse IP, nous l'avons ajouté au réseau.
 
 ### Restauration du PC d'administration - PC-Admin
 
