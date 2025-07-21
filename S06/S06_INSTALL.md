@@ -56,7 +56,7 @@ localectl set-x11-keymap fr
 Pour configurer l'adresse IP de la machine FreePBX, il faut modifier le fichier de configuration avec la commande suivante :
 
 ```
-nano /etc/sysconfig/network-scripts/ifcgf-eth0
+nano /etc/sysconfig/network-scripts/ifcfg-eth0
 ```
 
 En modifiant la ligne `BOOTPROTO=dhcp` par `BOOTPROTO=none` et en ajoutant les lignes :
@@ -92,6 +92,7 @@ Les numéros de téléphone, noms et mot de passe associés à nos lignes sont l
 | CLI01 | 80100   | Yara Abadi    | 1234 
 | CLI02 | 80101   | Remi Advezekt | 1234
 
+Dans _FreePBX Administration_, après avoir entré l'identifiant et mot de passe.  
 L'ajout d'une nouvelle ligne se fait en choissiant l'option _Applications_ puis _Extensions_ du menu :
 
 ![FreePBX ajout extensions](Ressources/freePBX_extensions.png)
@@ -110,7 +111,7 @@ Les informations à remplir sont :
 * **Secret** : le mot de passe
 * **Password for new user** : le mot de passe
 
-Les autres champs peuvent être laissés vierges. Une fois que l'on a rempli les informations, on peut valider avec le bouton _Submit_.
+Les autres champs peuvent être laissés vierges. Une fois que l'on a rempli les informations, on peut valider avec le bouton _Submit_, et enregistrer avec _Apply changes_.
 
 ## 2. 📞 Installation de 3CX Phone
 <span id="3CX"></span>
