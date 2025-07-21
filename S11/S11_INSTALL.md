@@ -8,6 +8,8 @@ Une panne électrique est survenue ce weekend. Certains équipements ont été e
 
 ### 🪟 Restauration du serveur Windows Server Core 2022 - WINSRV02
 
+### 🪟 Restauration du serveur Windows Server 2022 - WINGUI02
+
 ### 🪟 Restauration du client Windows Pro - WINCLI01
 
 ## Restauration Serveurs Linux
