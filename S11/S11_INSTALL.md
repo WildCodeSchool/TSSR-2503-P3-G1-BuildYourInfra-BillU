@@ -44,6 +44,8 @@ Après avoir vérifié que le DHCP lui a bien attribué une adresse IP, nous l'a
 
 ### Restauration du PC d'administration - PC-Admin
 
+Seule la mémoire RAM de cette machine a été atteinte par la panne électrique. Nous l'avons donc remplacée avec 2 Go de RAM.
+
 ## 🐧 Restauration Serveurs Linux
 
 ### Restauration du serveur web - intranet
