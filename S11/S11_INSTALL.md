@@ -2,6 +2,10 @@
 
 Une panne électrique est survenue ce weekend. Certains équipements ont été endommagés. Il nous incombe donc d'effectuer un diagnostic de nos machines et de réparer/rétablir les services manquants.
 
+Les résultats de notre enquête préliminaire sont les suivants :
+
+![Résultats PRA](Ressources/PRA.png)
+
 ## 🪟 Restauration AD & Windows
 
 ### Restauration du serveur Windows Server Core 2022 - WINSRVCORE01
