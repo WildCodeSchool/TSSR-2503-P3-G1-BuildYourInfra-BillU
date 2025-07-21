@@ -50,7 +50,7 @@ Seule la mémoire RAM de cette machine a été atteinte par la panne électrique
 
 ### Restauration du serveur web - intranet
 
-Nous avons repris le guide d'installation de la semaine S5 (INSTALL.md) [documentation](https://github.com/WildCodeSchool/TSSR-2503-P3-G1-BuildYourInfra-BillU/blob/main/S05/S05_INSTALL.md)
+Nous avons repris le guide d'installation de la semaine S5 (INSTALL.md) : [documentation](https://github.com/WildCodeSchool/TSSR-2503-P3-G1-BuildYourInfra-BillU/blob/main/S05/S05_INSTALL.md)
 
 ### Restauration du serveur de messagerie - mail
 
