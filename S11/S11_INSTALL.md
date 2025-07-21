@@ -24,7 +24,7 @@ Pour cela, nous voulons tout d'abord commencer par récupérer tous les rôles s
 Move-ADDirectoryServerOperationMasterRole -Identity "WINSRVGUI01" -OperationMasterRole 0,1,2,3,4 -Force
 ```
 
-Ensuite, nous pouvons distribuer à nouveau les rôles que nous l'avons décrit dans notre [documentation](https://github.com/WildCodeSchool/TSSR-2503-P3-G1-BuildYourInfra-BillU/blob/main/S07/S07_INSTALL.md) précédente.
+Ensuite, nous pouvons distribuer à nouveau les rôles tel que nous l'avons décrit dans notre [documentation](https://github.com/WildCodeSchool/TSSR-2503-P3-G1-BuildYourInfra-BillU/blob/main/S07/S07_INSTALL.md) précédente.
 
 ### Restauration du serveur Windows Server Core 2022 - WINSRVCORE02
 
