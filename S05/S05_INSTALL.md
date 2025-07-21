@@ -231,7 +231,7 @@ Ajouter dans le fichier
             DocumentRoot /var/www/html/intranet/                    --> les fichiers du ite seront dans ce répertoire
 
         <Directory /var/www/html/intranet>
-            Require IP 172.16.10.0/24                               --> Accès uniquement depuis ce réseau
+            Require ip 172.16.10.0/24                               --> Accès uniquement depuis ce réseau
         </Directory>
 
             ErrorLog /var/log/apache2/intranet.log                  --> fichier logs / journaux
