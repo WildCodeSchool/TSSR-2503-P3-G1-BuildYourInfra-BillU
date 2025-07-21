@@ -154,7 +154,7 @@ Préquis : Un domaine configuré dans Active Directory, une DMZ, Thunderbird ins
 
 ### 1. Installation en DMZ
 
-- Préparer un serveur Debian ave une IP fixe dans le réseau de la DMZ.
+- Préparer un serveur Debian ou CT LXC avec une IP fixe dans le réseau de la DMZ.
 
 - Mettre le système à jour
 
@@ -193,7 +193,7 @@ Préquis : Un domaine configuré dans Active Directory, une DMZ, Thunderbird ins
 
 - Décompresser l'archive :
 
-            tar xvf 1.7.4.tar.gz
+            tar -xvf 1.7.4.tar.gz
 
 - Se placer dans le répertoire contenant le fichier d'installation :
 
@@ -211,8 +211,7 @@ Suivre le menu d"installation
 - Choisir l'emplacement de stockage des emails
 - Serveur web: Nginx .
 - Backend: OpenLDAP.
-- LDAP Suffix, par exemple : dc=mail,dc=billu,dc=lan
-- Premier domaine, par exemple: mail
+- LDAP Suffix, par exemple : dc=billu,dc=lan
 - Mot de passe administrateur de la base de donnée:
 - Nom de domaine du premier mail, par exemple: billu.lan
 - Mot de passe administrateur du premier mail:
