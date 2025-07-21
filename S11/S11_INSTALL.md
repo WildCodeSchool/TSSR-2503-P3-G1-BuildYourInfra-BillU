@@ -1,6 +1,6 @@
 # 🖥️ Guide d'installation Sprint 11
 
-Une panne électrique est survenue ce weekend. Certains équipements ont été endommagés.
+Une panne électrique est survenue ce weekend. Certains équipements ont été endommagés. Il nous incombe donc d'effectuer un diagnostic de nos machines et de réparer/rétablir les services manquants.
 
 ## 📂 Restauration AD
 
