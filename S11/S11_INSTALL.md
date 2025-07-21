@@ -40,7 +40,7 @@ La machine WINSRVCORE01 a été totalement détruite par la panne électrique. I
 
 Pour cela, nous clonons sur Proxmox le template de machine Windows 10 Pro. 
 
-Après avoir vérifié que le DHCP lui a bien attribué une adresse IP, nous l'avons ajouté au réseau.
+Après avoir vérifié que le DHCP lui a bien attribué une adresse IP, nous l'avons ajoutée au domaine.
 
 ### Restauration du PC d'administration - PC-Admin
 
