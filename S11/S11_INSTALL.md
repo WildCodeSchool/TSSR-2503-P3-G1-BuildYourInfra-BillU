@@ -36,7 +36,7 @@ Seule la carte réseau de cette machine a été atteinte par la panne électriqu
 
 ### Restauration du client Windows Pro - WINCLI01
 
-La machine WINSRVCORE01 a été totalement détruite par la panne électrique. Il faut donc la recréer. 
+La machine WINCLI01 a été totalement détruite par la panne électrique. Il faut donc la recréer. 
 
 Pour cela, nous clonons sur Proxmox le template de machine Windows 10 Pro. 
 
@@ -49,6 +49,8 @@ Seule la mémoire RAM de cette machine a été atteinte par la panne électrique
 ## 🐧 Restauration Serveurs Linux
 
 ### Restauration du serveur web - intranet
+
+La machine intranet a été totalement détruite par la panne électrique. Il faut donc la recréer. 
 
 Nous avons repris le guide d'installation de la semaine S5 (INSTALL.md) : [documentation](https://github.com/WildCodeSchool/TSSR-2503-P3-G1-BuildYourInfra-BillU/blob/main/S05/S05_INSTALL.md)
 
