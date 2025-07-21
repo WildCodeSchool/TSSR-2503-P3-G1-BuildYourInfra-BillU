@@ -118,14 +118,6 @@ La collaboration avec des prestataires extérieurs, intégrés selon les besoins
 
 ### Sprint 11
 
-| Membre         | Rôle          | Missions                                                                   |
-| -------------- | ------------- | -------------------------------------------------------------------------- |
-| Bertrand       |  |   |
-| Brendan        |  |   |
-| Killian        |  |   |
-| Tatiana        |  |   |
-
-### Sprint 12
 
 | Membre         | Rôle          | Missions                                                                   |
 | -------------- | ------------- | -------------------------------------------------------------------------- |
@@ -133,6 +125,15 @@ La collaboration avec des prestataires extérieurs, intégrés selon les besoins
 | Brendan        | Product Owner |     |
 | Killian        | Technicien    |     |
 | Tatiana        | Technicien    |     |
+
+### Sprint 12
+
+| Membre         | Rôle          | Missions                                                                   |
+| -------------- | ------------- | -------------------------------------------------------------------------- |
+| Bertrand       |  |   |
+| Brendan        |  |   |
+| Killian        |  |   |
+| Tatiana        |  |   |
 
 ## ⚙️ Choix techniques
 
