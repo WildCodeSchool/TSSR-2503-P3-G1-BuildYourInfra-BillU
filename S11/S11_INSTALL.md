@@ -2,16 +2,26 @@
 
 Une panne électrique est survenue ce weekend. Certains équipements ont été endommagés. Il nous incombe donc d'effectuer un diagnostic de nos machines et de réparer/rétablir les services manquants.
 
-## 📂 Restauration AD
+## 🪟 Restauration AD & Windows
 
-### 🪟 Restauration du serveur Windows Server Core 2022 - WINSRV01
+### Restauration du serveur Windows Server Core 2022 - WINSRV01
 
-### 🪟 Restauration du serveur Windows Server Core 2022 - WINSRV02
+### Restauration du serveur Windows Server Core 2022 - WINSRV02
 
-### 🪟 Restauration du serveur Windows Server 2022 - WINGUI02
+### Restauration du serveur Windows Server 2022 - WINGUI02
 
-### 🪟 Restauration du client Windows Pro - WINCLI01
+### Restauration du client Windows Pro - WINCLI01
 
-## Restauration Serveurs Linux
+### Restauration du PC d'administration - PC-Admin
 
-### 🐧 Restauration du serveur de messagerie vocale - PBX01
+## 🐧 Restauration Serveurs Linux
+
+### Restauration du serveur web - intranet
+
+### Restauration du serveur de messagerie - mail
+
+### Restauration du serveur de messagerie vocale - PBX01
+
+### Restauration du serveur bastion - LINSRV04
+
+### Restauration du serveur Zabbix - LINSRV03
