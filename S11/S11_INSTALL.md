@@ -10,7 +10,7 @@ Les résultats de notre enquête préliminaire sont les suivants :
 
 ### Restauration du serveur Windows Server Core 2022 - WINSRVCORE01
 
-
+La machine WINSRVCORE01 a été totalement détruite par la panne électrique. Il faut donc la recréer. 
 
 ### Restauration du serveur Windows Server Core 2022 - WINSRVCORE02
 
