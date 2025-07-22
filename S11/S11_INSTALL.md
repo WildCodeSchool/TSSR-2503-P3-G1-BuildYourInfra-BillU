@@ -55,8 +55,18 @@ La machine intranet a été totalement détruite par la panne électrique. Il fa
 Nous avons repris le guide d'installation de la semaine S5 (INSTALL.md) : [documentation](https://github.com/WildCodeSchool/TSSR-2503-P3-G1-BuildYourInfra-BillU/blob/main/S05/S05_INSTALL.md)
 
 ### Restauration du serveur de messagerie - mail
+La machine ayant pour rôle le serveur mail a été totalement détruit par la panne électrique. Il faut donc la recréer. Nous avons choisi de créer une conteneur à la place.
+
+Création d'un nouveau conteneur LXC sous debian 12. Ensuite, nous avons repris la documentation pour la création du serveur mail. (cf S06)
+
+Les comptes RoundCube et ThunderBird ont également été recréés via la méthode décrite dans la documentation.  (cf S06)
 
 ### Restauration du serveur de messagerie vocale - PBX01
+La machine ayant le serveur FreePBX a été totalement détruit par la panne électrique. Il faut donc la recréer.
+
+Nous avons refait une machine, en suivant la documentation pour l'installation et configuration de FreePBX faite précédemment. (cf S06)
+
+Les comptes FreePBX et 3CX ont également été recréés via la méthode décrite dans la documentation. (cf S06)
 
 ### Restauration du serveur bastion - LINSRV04
 
