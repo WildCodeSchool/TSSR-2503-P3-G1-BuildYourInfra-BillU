@@ -78,4 +78,4 @@ Seule la mémoire RAM et la carte réseau de cette machine ont été atteintes p
 
 Voici l'état de nos machines après restauration :
 
-![PRA après restauration](Ressources/PRA_post.png)
+![PRA après restauration](Ressources/PRA_apres.png)
