@@ -73,3 +73,9 @@ Les comptes FreePBX et 3CX ont également été recréés via la méthode décri
 Seule la mémoire RAM et la carte réseau de cette machine ont été atteintes par la panne électrique. Nous les avons donc remplacées.
 
 ### Restauration du serveur Zabbix - LINSRV03
+
+## ✅ Etat post-restauration
+
+Voici l'état de nos machines après restauration :
+
+![PRA après restauration](Ressources/PRA_fin.png)
