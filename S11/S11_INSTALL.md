@@ -60,4 +60,6 @@ Nous avons repris le guide d'installation de la semaine S5 (INSTALL.md) : [docum
 
 ### Restauration du serveur bastion - LINSRV04
 
+Seule la mémoire RAM et la carte réseau de cette machine ont été atteintes par la panne électrique. Nous les avons donc remplacées.
+
 ### Restauration du serveur Zabbix - LINSRV03
