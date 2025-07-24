@@ -74,6 +74,12 @@ Seule la mémoire RAM et la carte réseau de cette machine ont été atteintes p
 
 ### Restauration du serveur Zabbix - LINSRV03
 
+La machine LINSRV03 a été totalement détruite par la panne électrique. Il faut donc la recréer. 
+
+Pour cela, nous créons sur Proxmox un conteneur Debian. 
+
+Pour installer et configurer Zabbix, nous reprenons notre [documentation](https://github.com/WildCodeSchool/TSSR-2503-P3-G1-BuildYourInfra-BillU/blob/main/S05/S05_INSTALL.md) préalable, que nous avons mise à jour suite à cette panne.
+
 ## ✅ Etat post-restauration
 
 Voici l'état de nos machines après restauration :
