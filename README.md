@@ -121,19 +121,19 @@ La collaboration avec des prestataires extérieurs, intégrés selon les besoins
 
 | Membre         | Rôle          | Missions                                                                   |
 | -------------- | ------------- | -------------------------------------------------------------------------- |
-| Bertrand       | Scrum Master  |     |
-| Brendan        | Product Owner |     |
-| Killian        | Technicien    |     |
-| Tatiana        | Technicien    |     |
+| Bertrand       | Scrum Master  | Restauration machines en panne                                             |
+| Brendan        | Product Owner | Restauration machines en panne                                             |
+| Killian        | Technicien    | Restauration machines en panne                                             |
+| Tatiana        | Technicien    | Restauration machines en panne                                             |
 
 ### Sprint 12
 
 | Membre         | Rôle          | Missions                                                                   |
 | -------------- | ------------- | -------------------------------------------------------------------------- |
-| Bertrand       |  |   |
-| Brendan        |  |   |
-| Killian        |  |   |
-| Tatiana        |  |   |
+| Bertrand       | Technicien    |   |
+| Brendan        | Technicien    |   |
+| Killian        | Product Owner |   |
+| Tatiana        | Scrum Master  |   |
 
 ## ⚙️ Choix techniques
 
