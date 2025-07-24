@@ -9,68 +9,62 @@
 
 ## 📊 Installation et configuration de Zabbix
 <span id="zabbix"></span>
+ 
+ - *Pour un conteneur Debian 12*
 
-Pour installer le gestionnaire de supervision Zabbix, une nouvelle machine virtuelle a été créée. Cette machine a pour OS Ubuntu. Elle est présente sur le réseau LAN de l'entreprise à l'adresse 172.16.10.8.
+ - *Zabbix 7.0.2*
 
-Afin de suivre les différentes machines de notre infrastructure, il faut installer Zabbix serveur sur le serveur de supervision, et Zabbix agent sur les machines à superviser.
 
-### Zabbix serveur
 
-L'installation de Zabbix serveur sur Linux se fait en lignes de commandes.
+#### 1. Entrer ces commandes :
 
-Il faut tout d'abord installer le répo Zabbix :
+        apt update && apt upgrade -y
+        apt install -y wget curl gnupg2 locales apache2 php php-mysql libapache2-mod-php mariadb-server mariadb-client
+        echo 'en_US.UTF-8 UTF-8' >> /etc/locale.gen && locale-gen && update-locale LANG=en_US.UTF-8
+        wget https://repo.zabbix.com/zabbix/7.0/debian/pool/main/z/zabbix-release/zabbix-release_7.0-2+debian12_all.deb
+        dpkg -i zabbix-release_7.0-2+debian12_all.deb && apt update
+        apt install -y zabbix-server-mysql zabbix-frontend-php zabbix-apache-conf zabbix-sql-scripts zabbix-agent
+        systemctl start mariadb && systemctl enable mariadb
 
-```bash
-wget https://repo.zabbix.com/zabbix/7.2/release/debian/pool/main/z/zabbix-release/zabbix-release_latest_7.2+debian12_all.deb
-dpkg -i zabbix-release_latest_7.2+debian12_all.deb
-apt update 
-```
 
-Puis installer Zabbix server, le front-end et l'agent :
+#### 2. Se connecter à la base de données (`mysql -root -p` si l'utilisateur n'est pas root)
 
-```bash
-apt install zabbix-server-mysql zabbix-frontend-php zabbix-apache-conf zabbix-sql-scripts zabbix-agent
-```
+        mysql -uroot 
+    -> (Entrée)
 
-On initialise la base de données de Zabbix avec les commandes suivantes :
+#### 3. Entrer les commandes:
 
-```bash
-mysql -uroot -p
-password # Votre mot de passe peut changer
-mysql> create database zabbix character set utf8mb4 collate utf8mb4_bin;
-mysql> create user zabbix@localhost identified by 'password';
-mysql> grant all privileges on zabbix.* to zabbix@localhost;
-mysql> set global log_bin_trust_function_creators = 1;
-mysql> quit; 
-```
+    create database zabbix character set utf8mb4 collate utf8mb4_bin;
 
-Puis on importe la base de données initiale :
+    create user zabbix@localhost identified by 'Azerty1*';
 
-```bash
-zcat /usr/share/zabbix/sql-scripts/mysql/server.sql.gz | mysql --default-character-set=utf8mb4 -uzabbix -p zabbix 
-```
+    grant all privileges on zabbix.* to zabbix@localhost;
 
-On désactive ensuite l'option log_bin_trust_function_creators :
+    set global log_bin_trust_function_creators = 1;dark
+    quit;
 
-```bash
-# mysql -uroot -p
-password
-mysql> set global log_bin_trust_function_creators = 0;
-mysql> quit; 
-```
+#### 4. Importer la schéma
 
-On configure ensuite la base de données en modifiant le fichier _/etc/zabbix/zabbix_server.conf_ :
+    zcat /usr/share/zabbix-sql-scripts/mysql/server.sql.gz | mysql --default-character-set=utf8mb4 -uzabbix -p zabbix
 
-```bash
-DBPassword=password # Votre mot de passe
-```
+(Entrer le mot de passe créé à la ligne User juste avant)
 
-Puis on lance le serveur Zabbix :
+#### 5. Configurer la DB pour Zabbix
 
-```bash
-systemctl restart zabbix-server zabbix-agent apache2
-systemctl enable zabbix-server zabbix-agent apache2 
-```
+- Vérifier que ces 3 champs sont décommentés
+
+        DBName=zabbix
+        DBUser=zabbix
+        DBPassword=Azerty1*
+
+- Décommenter `"DBPassword="`
+
+Ajouter le nouveau mot de passe -> `DBPassword=Azerty1*"`
+
+#### 6. Redémarrer et activer
+
+        systemctl restart zabbix-server zabbix-agent apache2
+        systemctl enable zabbix-server zabbix-agent apache2
 
 L'accès au tableau de bord Zabbix peut se faire en se connectant à l'adresse _172.16.10.8_ depuis n'importe quel ordinateur.
 
