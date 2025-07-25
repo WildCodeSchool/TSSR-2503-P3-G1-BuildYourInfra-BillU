@@ -13,8 +13,8 @@
 | 557 | G1-WINSRVCORE02     | SRVWINCORE02       | Serveur AD-DS, DNS, DHCP, VM  | A jour            | A jour               |
 | 559 | G1-LINSRV04-bastion | LINSRV04           | Serveur Guacamole, VM         | A jour            | A jour               |
 | 560 | G1-PBX01            | freepbx            | Serveur VoIP, VM              | A jour            | A jour               |
-| 562 | PC-Admin            | PCADMIN            | Client administration, VM     | A jour            | A jour               |
+| 562 | PC-Admin            | PCADMIN            | Client administration, VM     | [A jour ](https://github.com/WildCodeSchool/TSSR-2503-P3-G1-BuildYourInfra-BillU/blob/main/S07/S07_INSTALL.md)           | [A jour](https://github.com/WildCodeSchool/TSSR-2503-P3-G1-BuildYourInfra-BillU/blob/main/S07/S07_USER_GUIDE.md)               |
 | 564 | G1-WINCLI02         | WINCLI01           | Client utilisateur, VM        | NA                | NA                   |
 | 565 | G1-WINCLI01         | WINCLI02           | Client utilisateur, VM        | NA                | NA                   |
 | 566 | G1-KALI             | kali               | Client attaque pentesting, VM | A jour            | A jour               |
-| 568 | G1-WINSRVGUI02      | WINSRVGUI02        | Serveur WSUS, VM              | A jour            | A jour               |
+| 568 | G1-WINSRVGUI02      | WINSRVGUI02        | Serveur WSUS, VM              | [A jour](https://github.com/WildCodeSchool/TSSR-2503-P3-G1-BuildYourInfra-BillU/blob/main/S07/S07_INSTALL.md)            | [A jour](https://github.com/WildCodeSchool/TSSR-2503-P3-G1-BuildYourInfra-BillU/blob/main/S07/S07_USER_GUIDE.md)               |
