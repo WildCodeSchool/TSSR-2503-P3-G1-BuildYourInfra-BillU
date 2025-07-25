@@ -6,7 +6,7 @@
 | 521 | intranet            | intranet           | Serveur Apache, CT            | A jour            | A jour               |
 | 522 | Mail                | Mail               | Serveur Mail, CT              | A jour            | A jour               |
 | 525 | G1-ZABBIX           | G1-ZABBIX          | Serveur Zabbix, CT            | A jour            | A jour               |
-| 551 | G1-pfsense          | pfSense.home.arpa  | Pare feu, VM                  | A jour            | A jour               |
+| 551 | G1-pfsense          | pfSense.home.arpa  | Pare feu, VM                  | [A jour](https://github.com/WildCodeSchool/TSSR-2503-P3-G1-BuildYourInfra-BillU/blob/main/S04/S04_INSTALL.md)            | [A jour](https://github.com/WildCodeSchool/TSSR-2503-P3-G1-BuildYourInfra-BillU/blob/main/S04/S04_USER_GUIDE.md)               |
 | 552 | G1-WINSRVGUI01      | WINSRVGUI01        | Serveur AD-DS, DNS, DHCP, VM  | [A jour ](https://github.com/WildCodeSchool/TSSR-2503-P3-G1-BuildYourInfra-BillU/blob/main/S02_03/S02_03_INSTALL.md)           | [A jour](https://github.com/WildCodeSchool/TSSR-2503-P3-G1-BuildYourInfra-BillU/blob/main/S02_03/S02_03_USER_GUIDE.md)               |
 | 553 | G1-Ubuntu-defense   | defense            | Client défense pentesting, VM | A jour            | A jour               |
 | 554 | G1-WINSRVCORE01     | WINSRVCORE01       | Serveur AD-DS, DNS, DHCP, VM  | [A jour ](https://github.com/WildCodeSchool/TSSR-2503-P3-G1-BuildYourInfra-BillU/blob/main/S02_03/S02_03_INSTALL.md)           | [A jour ](https://github.com/WildCodeSchool/TSSR-2503-P3-G1-BuildYourInfra-BillU/blob/main/S02_03/S02_03_USER_GUIDE.md)              |
