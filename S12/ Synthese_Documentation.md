@@ -2,7 +2,7 @@
 
 | ID  | Nom sur proxmox     | Nom sur la machine | Matériel                      | Statut INSTALL.md | Statut USER_GUIDE.md |
 | --- | ------------------- | ------------------ | ----------------------------- | ----------------- | -------------------- |
-| 520 | GLPI                | GLPI               | Serveur GLPI, CT              | A jour            | A jour               |
+| 520 | GLPI                | GLPI               | Serveur GLPI, CT              | [A jour ](https://github.com/WildCodeSchool/TSSR-2503-P3-G1-BuildYourInfra-BillU/blob/main/S07/S07_INSTALL.md)           | [A jour](https://github.com/WildCodeSchool/TSSR-2503-P3-G1-BuildYourInfra-BillU/blob/main/S07/S07_USER_GUIDE.md)               |
 | 521 | intranet            | intranet           | Serveur Apache, CT            | A jour            | A jour               |
 | 522 | Mail                | Mail               | Serveur Mail, CT              | A jour            | A jour               |
 | 525 | G1-ZABBIX           | G1-ZABBIX          | Serveur Zabbix, CT            | A jour            | A jour               |
