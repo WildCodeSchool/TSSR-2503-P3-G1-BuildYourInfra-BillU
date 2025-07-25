@@ -81,7 +81,7 @@ On coche bien **Allow only secure dynamic updates**, **Next**
 
 
 ### 3. Configuration Windows Serveur Core
-<span id="role windows core"></span>
+<span id="roles_windows_core"></span>
 
 Pour la machine Windows Server Core, nous avons fait un clone de la machine template Windows Server Core sur Proxmox.
 
