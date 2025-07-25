@@ -135,10 +135,6 @@ La collaboration avec des prestataires extérieurs, intégrés selon les besoins
 | Killian        | Product Owner |   |
 | Tatiana        | Scrum Master  |   |
 
-## ⚙️ Choix techniques
-
-**TODO: **
-
 ## 🧗 Difficultés rencontrées
 
 ### Sprint 1
