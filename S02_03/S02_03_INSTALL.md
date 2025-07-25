@@ -8,7 +8,7 @@
 #### 2.2 [Configuration du rôle AD DS sur Windows Server 2022 GUI](#config_adds_windows_gui)
 #### 2.3 [Configuration du rôle DHCP sur Windows Server 2022 GUI](#config_dhcp_windows_gui)
 #### 2.4 [Configuration du rôle DHS sur Windows Server 2022 GUI](#config_dns_windows_gui)
-### 3. [Installation des rôles sur Windows Server 2022 GUI](#roles_windows_gui)
+### 3. [Installation des rôles sur Windows Server 2022 CORE](#roles_windows_core)
 ### 4. [Configuration Serveur Debian](#config-debian)
 
 ### 1. Paramétrage des IP  
@@ -81,7 +81,7 @@ On coche bien **Allow only secure dynamic updates**, **Next**
 
 
 ### 3. Configuration Windows Serveur Core
-<span id="Configuration Windows Server Core"></span>
+<span id="role windows core"></span>
 
 Pour la machine Windows Server Core, nous avons fait un clone de la machine template Windows Server Core sur Proxmox.
 
