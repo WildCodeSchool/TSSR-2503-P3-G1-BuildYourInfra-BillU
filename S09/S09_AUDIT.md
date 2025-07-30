@@ -9,8 +9,8 @@ Avant tout type de changement, voici nos résultats initiaux :
 ![initial2](Ressources/AvantChangements-recoupé1.png)  
 ![initial3](Ressources/AvantChangements-recoupé2.png)  
 
-### Changements
-#### Désactiver le cryptage RC4 et DES
+#### Changements
+##### Désactiver le cryptage RC4 et DES
 Créer une GPO.
 Dans l'arborescence
 Configuration de l’ordinateur
@@ -27,7 +27,7 @@ Cocher uniquement AES-128 et AES-256
 
 Réactualiser les GPO avec ``gpupdate /force``
 
-#### Désactiver le print spooler
+##### Désactiver le print spooler
 
 Suivre [ce lien](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2021-34527)
 
@@ -43,13 +43,13 @@ Désactiver la stratégie « Autoriser les pouleur d’impression à accepter l
 Réactualiser les GPO avec ``gpupdate /force``
 
 
-#### Changement de mot de passe Administrator
+##### Changement de mot de passe Administrator
 Appuyer sur Ctrl, Alt + Del
 Changer de mot de passe.
 Entrer un nouveau mot de passe plus complexe. Valider.
 
 
-#### Suppression de Authentified Users du groupe Pre-Windows 2000 Compatible Access Properties
+##### Suppression de Authentified Users du groupe Pre-Windows 2000 Compatible Access Properties
 Dans la console des Users and Computers, click droit sur le nom du domaine, puis **Find**.
 Rechercher "Pre-Windows" et cliquer sur **Find Now**
 Click droit sur le groupe Pre-Windows 2000 Compatible Access Properties, aller dans **Members** et supprimer Authentified Users.
@@ -57,7 +57,7 @@ Click droit sur le groupe Pre-Windows 2000 Compatible Access Properties, aller d
 ![](Ressources/pk-Pre-Windows.png)  
 
 
-#### Politique de mot de passe forte pour Administrators
+##### Politique de mot de passe forte pour Administrators
 Aller dans la console **Active Directory Domain Controller**, puis dans le domaine, **Security**, **Password Settings Container**.
 Dans **Tasks**, cliquez sur **New** puis **Password Settings**
 
@@ -70,7 +70,11 @@ Remplir selon les besoins, par exemple comme ci-dessous :
 Il est possible de vérifier sa bonne application:  
 Se rendre dans le domaine, puis **Users**.  
 Sélectionner l'utilisateur souhaité, ici, Administrator, et sur la droite **View resultant password settings**.  
-La même fenêtre s'ouvre, avec les paramètres édités comme souhaités, montrant bien qu'ils sont appliqués à l'utilisateur sélectionné.
+La même fenêtre s'ouvre, avec les paramètres édités comme souhaités, montrant bien qu'ils sont appliqués à l'utilisateur sélectionné.  
+
+#### Resultats
+Les changements ont apporté une amélioration du test PurpleKnight, montant jusqu'un résultat de 98%.  
+ ![Resultats](Ressources/ApresChangements.png)  
 
 ### Policy Analyzer
 
@@ -90,6 +94,7 @@ En voici un exemple :
  ![conflit2](Ressources/MSCT-PA-conflit2.png)
 
 Dans ces cas la, les conflits ont été bien analysés, et une vérification que les GPOs soient bien liées à différentes UO, avec aucun machine en commun sur ces différentes UO.  
+
 
 ### ADACL-Scanner
 
