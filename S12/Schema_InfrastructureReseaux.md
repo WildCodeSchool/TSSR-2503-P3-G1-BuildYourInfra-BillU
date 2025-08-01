@@ -1,3 +1,3 @@
 # 🗺️ Schéma de l'infrastructure réseau
 
-![Schéma infrastructure](Ressources/SchemaInfrastructure_Projet3.jpg)
+![Schéma infrastructure](Ressources/SchemaRoutage_Projet3.jpg)
