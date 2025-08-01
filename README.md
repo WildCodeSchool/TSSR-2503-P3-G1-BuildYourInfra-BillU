@@ -10,8 +10,6 @@ Ce projet est le troisième projet réalisé au sein de la Wild Code School, dan
 
 Ce projet a pour objectif de travailler sur la conception et construction d'une infrastructure réseau.
 
-### Objectifs finaux
-
 ## 📜 Introduction
 
 **BillU** est une filiale dynamique du groupe international **RemindMe**, un acteur majeur comptant plus de 2000 collaborateurs répartis sur plusieurs continents. 
