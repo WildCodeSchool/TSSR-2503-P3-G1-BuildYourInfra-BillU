@@ -205,3 +205,11 @@ Nous avons finalement décidé de mettre en place nos sauvegardes à l'aide de W
 ### Redondance des serveurs
 
 En l'état, pour des raisons de ressources et de temps, il n'y a pas de redondance de nos machines. Cela fait partie de nos pistes d'amélioration possibles afin d'améliorer notre infrastructure.
+
+### Segmentation du réseau
+
+Afin d'améliorer la sécurité de notre infrastructure, il nous serait possible de segmenter notre réseau interne pour les ordinateurs client.
+
+### Amélioration des scores de l'audit
+
+Afin d'améliorer la sécurité de notre infrastructure, il nous serait encore possible d'améliorer les scores obtenus lors de notre audit. Cela permettrait de renforcer la sécurité globale de l'infrastructure sur plusieurs aspects différents.
